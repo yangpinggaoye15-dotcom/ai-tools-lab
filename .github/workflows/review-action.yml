@@ -1,0 +1,149 @@
+name: Review Action
+
+on:
+  workflow_dispatch:
+    inputs:
+      article_id:
+        description: 'Article filename (without extension)'
+        required: true
+      action:
+        description: 'Action: approve, reject, fix'
+        required: true
+      feedback:
+        description: 'Human feedback for AI fix'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  review-action:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        if: ${{ github.event.inputs.action == 'fix' }}
+        run: pip install anthropic
+
+      - name: Execute review action
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ARTICLE_ID: ${{ github.event.inputs.article_id }}
+          ACTION: ${{ github.event.inputs.action }}
+          FEEDBACK: ${{ github.event.inputs.feedback }}
+        run: |
+          python - <<'PYTHON_SCRIPT'
+          import json, os, glob
+          from datetime import datetime
+          from pathlib import Path
+
+          article_id = os.environ["ARTICLE_ID"]
+          action = os.environ["ACTION"]
+          feedback = os.environ.get("FEEDBACK", "")
+
+          print(f"=== Review Action: {action} for {article_id} ===")
+
+          # レビューデータの保存先
+          review_dir = Path("review-data")
+          review_dir.mkdir(exist_ok=True)
+
+          review_file = review_dir / f"{article_id}.json"
+
+          # 既存のレビューデータを読み込み
+          review_data = {}
+          if review_file.exists():
+              review_data = json.loads(review_file.read_text())
+
+          review_data["article_id"] = article_id
+          review_data["last_action"] = action
+          review_data["last_action_date"] = datetime.now().isoformat()
+          review_data["feedback_history"] = review_data.get("feedback_history", [])
+
+          if action == "approve":
+              review_data["status"] = "approved"
+              review_data["approved_date"] = datetime.now().isoformat()
+              print("Article approved!")
+
+          elif action == "reject":
+              review_data["status"] = "rejected"
+              review_data["feedback_history"].append({
+                  "date": datetime.now().isoformat(),
+                  "feedback": feedback,
+              })
+              print(f"Article rejected. Feedback: {feedback}")
+
+          elif action == "fix":
+              print(f"AI fix requested. Feedback: {feedback}")
+
+              # レビュー用記事を探す
+              review_pages = list(Path("review").glob("*.html"))
+              target = None
+              for p in review_pages:
+                  if article_id in p.stem or article_id.replace("-", " ") in p.read_text(encoding="utf-8"):
+                      target = p
+                      break
+
+              if not target:
+                  print(f"Warning: Could not find review page for {article_id}")
+
+              # Claude APIで修正
+              import anthropic
+              client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+
+              # 対象ファイルの内容を読む
+              if target and target.exists():
+                  content = target.read_text(encoding="utf-8")
+
+                  msg = client.messages.create(
+                      model="claude-sonnet-4-6",
+                      max_tokens=8192,
+                      temperature=0.2,
+                      messages=[{"role": "user", "content": f"""以下のHTML記事ページを、編集者の指摘に基づいて修正してください。
+修正後のHTML全文をそのまま出力してください（説明不要）。
+
+## 編集者の指摘
+{feedback}
+
+## 現在の記事HTML
+{content}
+"""}],
+                  )
+
+                  fixed = msg.content[0].text.strip()
+                  # HTMLタグで始まっていなければ、元のコンテンツを保持
+                  if fixed.startswith("<!DOCTYPE") or fixed.startswith("<html"):
+                      target.write_text(fixed, encoding="utf-8")
+                      print(f"Article fixed and saved: {target}")
+                  else:
+                      print("Warning: AI response doesn't look like HTML, skipping save")
+
+              review_data["status"] = "fixed"
+              review_data["feedback_history"].append({
+                  "date": datetime.now().isoformat(),
+                  "feedback": feedback,
+                  "action": "ai_fix",
+              })
+
+          # レビューデータを保存
+          review_file.write_text(json.dumps(review_data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+          # レビュー一覧ページを更新（ステータス反映）
+          print(f"Review data saved: {review_file}")
+          print(f"Status: {review_data.get('status', 'unknown')}")
+          PYTHON_SCRIPT
+
+      - name: Commit and push
+        run: |
+          git config user.name "NexusAI Bot"
+          git config user.email "bot@nexusai.local"
+          git add review-data/ review/ || true
+          git diff --staged --quiet || git commit -m "Review: ${{ github.event.inputs.action }} ${{ github.event.inputs.article_id }}"
+          git push

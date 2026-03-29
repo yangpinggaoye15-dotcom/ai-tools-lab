@@ -286,4 +286,72 @@ hr { border:none;border-top:1px solid #e2e8f0;margin:20px 0; }
 <li><strong>Perchance AI Image Generator 公式サイト</strong></li>
    https://perchance.org/ai-text-to-image-generator</article>
 <a href="index.html" class="back">← 一覧に戻る</a>
+
+<div class="review-panel">
+<h2>レビューチェックリスト</h2>
+<label class="checklist"><input type="checkbox"> 参考文献セクションがあるか</label>
+<label class="checklist"><input type="checkbox"> アフィリエイト開示文があるか</label>
+<label class="checklist"><input type="checkbox"> 事実と推測が分離されているか（「筆者の見解:」ラベル）</label>
+<label class="checklist"><input type="checkbox"> 料金に出典が付いているか</label>
+<label class="checklist"><input type="checkbox"> 景表法リスク表現がないか（「絶対」「No.1」等）</label>
+<label class="checklist"><input type="checkbox"> 内容に誤り・違和感がないか</label>
+
+<h2 style="margin-top:20px;">指摘事項</h2>
+<textarea id="feedback" placeholder="修正してほしい内容を入力&#10;&#10;例: 料金が間違っている、参考文献を追加して"></textarea>
+
+<div class="btn-row">
+<button class="btn btn-approve" onclick="submitReview('approve')">承認</button>
+<button class="btn btn-fix" onclick="submitReview('fix')">AIで修正</button>
+<button class="btn btn-reject" onclick="submitReview('reject')">差戻し</button>
+</div>
+<div id="result"></div>
+</div>
+
+<style>
+.review-panel { max-width:720px;margin:0 auto;padding:24px 16px 60px;border-top:3px solid #f59e0b;margin-top:32px; }
+.review-panel h2 { font-size:1em;color:#1e293b;margin-bottom:12px; }
+.checklist { display:block;padding:8px 0;font-size:0.9em;border-bottom:1px solid #f1f5f9; }
+.checklist input { margin-right:8px; }
+textarea { width:100%;height:100px;border:1px solid #e2e8f0;border-radius:8px;padding:10px;font-size:0.9em;resize:vertical;font-family:inherit;margin-top:4px; }
+.btn-row { display:flex;gap:8px;margin-top:12px; }
+.btn { flex:1;padding:12px;border:none;border-radius:8px;font-size:0.9em;cursor:pointer;font-weight:600;color:#fff; }
+.btn-approve { background:#10b981; }
+.btn-fix { background:#2563eb; }
+.btn-reject { background:#ef4444; }
+.btn:disabled { opacity:0.5; }
+#result { margin-top:12px;font-size:0.85em; }
+</style>
+
+<script>
+var ARTICLE_ID = "ai-image-generators";
+async function submitReview(action) {
+  var feedback = document.getElementById("feedback").value;
+  if (action === "fix" && !feedback.trim()) { alert("指摘事項を入力してください"); return; }
+  if (action === "approve" && !confirm("この記事を承認しますか？")) return;
+
+  var btns = document.querySelectorAll(".btn");
+  btns.forEach(function(b){ b.disabled = true; });
+  var result = document.getElementById("result");
+  result.innerHTML = "<div style='color:#2563eb;'>処理中... (GitHub Actionsが実行されます。1-2分で完了します)</div>";
+
+  try {
+    var resp = await fetch("/api/review", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({ article_id: ARTICLE_ID, action: action, feedback: feedback })
+    });
+    var data = await resp.json();
+    if (data.success) {
+      var msgs = { approve: "承認しました", fix: "AI修正を開始しました", reject: "差戻ししました" };
+      result.innerHTML = "<div style='color:#10b981;font-weight:600;'>" + msgs[action] + "</div><div style='color:#666;margin-top:4px;'>GitHub Actionsで処理中です。数分後にページをリロードしてください。</div>";
+    } else {
+      result.innerHTML = "<div style='color:#ef4444;'>エラー: " + (data.error || "不明") + "</div>";
+      btns.forEach(function(b){ b.disabled = false; });
+    }
+  } catch(e) {
+    result.innerHTML = "<div style='color:#ef4444;'>通信エラー: " + e.message + "</div>";
+    btns.forEach(function(b){ b.disabled = false; });
+  }
+}
+</script>
 </body></html>

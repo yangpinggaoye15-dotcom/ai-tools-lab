@@ -9,18 +9,47 @@ body { font-family:'Helvetica Neue','Noto Sans JP',sans-serif;background:#f1f5f9
 h2 { font-size:1.1em;margin:16px 0 8px;color:#1e293b; }
 .card { display:block;background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:16px;margin-bottom:12px;text-decoration:none;color:#333;font-size:0.9em;line-height:1.5; }
 .card:hover { border-color:#2563eb; }
-.status { display:inline-block;background:#fef3c7;color:#92400e;padding:2px 8px;border-radius:8px;font-size:0.75em;margin-bottom:6px; }
+.status { display:inline-block;padding:2px 8px;border-radius:8px;font-size:0.75em;margin-bottom:6px; }
+.status-pending { background:#fef3c7;color:#92400e; }
+.status-approved { background:#d1fae5;color:#065f46; }
+.status-rejected { background:#fee2e2;color:#991b1b; }
 .note { background:#fff;border-radius:10px;padding:16px;margin-top:16px;font-size:0.85em;color:#666;line-height:1.6; }
 </style></head><body>
 <div class="bar">REVIEW MODE</div>
 <div class="container">
 <h2>レビュー待ち記事 (5本)</h2>
-<a href="ai-writing-comparison.html" class="card"><span class="status">確認待ち</span>AI文章作成ツール 比較 2026｜目的別おすすめ7選と選び方を徹底解説</a><a href="chatgpt-alternatives.html" class="card"><span class="status">確認待ち</span>ChatGPT代替ツールおすすめ7選｜目的別の選び方と比較ガイド【2026年版】</a><a href="ai-image-generators.html" class="card"><span class="status">確認待ち</span>AI画像生成 無料おすすめ7選！初心者でも使えるツールを徹底比較【2026年版】</a><a href="ai-code-generators.html" class="card"><span class="status">確認待ち</span>AIコード生成ツール比較2026：開発者が選ぶべき最強ツールはどれ？</a><a href="ai-video-editors.html" class="card"><span class="status">確認待ち</span>AI動画編集ソフト おすすめ7選【2026年最新】選び方と比較ガイド</a>
+<p style="font-size:0.85em;color:#666;margin-bottom:12px;">記事をタップ → 内容確認 → 承認/差戻し/AI修正がスマホで完結します</p>
+
+<a href="ai-writing-comparison.html" class="card">
+<span class="status status-pending">確認待ち</span>
+AI文章作成ツール 比較 2026｜目的別おすすめ7選と選び方を徹底解説
+</a>
+
+<a href="chatgpt-alternatives.html" class="card">
+<span class="status status-pending">確認待ち</span>
+ChatGPT代替ツールおすすめ7選｜目的別の選び方と比較ガイド【2026年版】
+</a>
+
+<a href="ai-image-generators.html" class="card">
+<span class="status status-pending">確認待ち</span>
+AI画像生成 無料おすすめ7選！初心者でも使えるツールを徹底比較【2026年版】
+</a>
+
+<a href="ai-code-generators.html" class="card">
+<span class="status status-pending">確認待ち</span>
+AIコード生成ツール比較2026：開発者が選ぶべき最強ツールはどれ？
+</a>
+
+<a href="ai-video-editors.html" class="card">
+<span class="status status-pending">確認待ち</span>
+AI動画編集ソフト おすすめ7選【2026年最新】選び方と比較ガイド
+</a>
+
 <div class="note">
 <strong>レビュー手順:</strong><br>
-1. 各記事をタップして内容を確認<br>
-2. 参考文献・アフィリエイト開示・事実/推測分離をチェック<br>
-3. PCのレビューダッシュボード(localhost:8090)で承認/差戻し<br>
-4. 承認後に公開
+1. 記事をタップして内容を確認<br>
+2. ページ下部でチェックポイントを確認<br>
+3. 問題なければ「承認」、問題あれば指摘を書いて「AI修正」または「差戻し」<br>
+4. 全てスマホで完結します
 </div>
 </div></body></html>
