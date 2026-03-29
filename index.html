@@ -4,201 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Tools Lab | AIツール比較・レビューサイト</title>
-    <meta name="description" content="AIライティング、画像生成、コード生成など、最新AIツールを徹底比較。実際に使って検証したレビューとおすすめランキングを掲載。">
+    <meta name="description" content="AIライティング、画像生成、コード生成など、最新AIツールを徹底比較。準備中です。">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Helvetica Neue', 'Noto Sans JP', sans-serif; color: #333; line-height: 1.8; }
-
-        /* Header */
-        header { background: #fff; border-bottom: 2px solid #2563eb; padding: 16px 0; position: sticky; top: 0; z-index: 100; }
-        .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.5em; font-weight: 800; color: #2563eb; text-decoration: none; }
-        .logo span { color: #333; }
-        nav a { color: #555; text-decoration: none; margin-left: 24px; font-size: 0.95em; font-weight: 500; }
-        nav a:hover { color: #2563eb; }
-
-        /* Hero */
-        .hero { background: linear-gradient(135deg, #1e3a5f, #2563eb); color: white; padding: 80px 20px; text-align: center; }
-        .hero h1 { font-size: 2.2em; margin-bottom: 16px; line-height: 1.4; }
-        .hero p { font-size: 1.1em; opacity: 0.9; max-width: 600px; margin: 0 auto 32px; }
-        .hero-stats { display: flex; justify-content: center; gap: 48px; margin-top: 32px; }
-        .hero-stat { text-align: center; }
-        .hero-stat .num { font-size: 2em; font-weight: 800; }
-        .hero-stat .label { font-size: 0.85em; opacity: 0.8; }
-
-        /* Categories */
-        .section { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
-        .section-title { font-size: 1.6em; font-weight: 700; margin-bottom: 8px; color: #1e3a5f; }
-        .section-subtitle { color: #666; margin-bottom: 32px; }
-        .categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
-        .cat-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 28px; text-decoration: none; color: #333; transition: all 0.2s; }
-        .cat-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); border-color: #2563eb; }
-        .cat-icon { font-size: 2em; margin-bottom: 12px; }
-        .cat-card h3 { font-size: 1.1em; margin-bottom: 8px; }
-        .cat-card p { font-size: 0.9em; color: #666; }
-
-        /* Articles */
-        .articles { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
-        .article-card { border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; transition: all 0.2s; }
-        .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
-        .article-thumb { background: linear-gradient(135deg, #667eea, #764ba2); height: 160px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3em; }
-        .article-body { padding: 20px; }
-        .article-body h3 { font-size: 1em; margin-bottom: 8px; line-height: 1.5; }
-        .article-body h3 a { color: #333; text-decoration: none; }
-        .article-body h3 a:hover { color: #2563eb; }
-        .article-meta { font-size: 0.8em; color: #999; margin-bottom: 8px; }
-        .article-body p { font-size: 0.9em; color: #666; }
-        .tag { display: inline-block; background: #eef2ff; color: #2563eb; padding: 2px 10px; border-radius: 12px; font-size: 0.75em; margin-right: 4px; }
-
-        /* CTA */
-        .cta { background: #f0f4ff; padding: 60px 20px; text-align: center; }
-        .cta h2 { font-size: 1.5em; margin-bottom: 12px; color: #1e3a5f; }
-        .cta p { color: #666; margin-bottom: 24px; }
-        .cta-btn { display: inline-block; background: #2563eb; color: white; padding: 14px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; }
-        .cta-btn:hover { background: #1d4ed8; }
-
-        /* Footer */
-        footer { background: #1e293b; color: #94a3b8; padding: 40px 20px; text-align: center; font-size: 0.85em; }
-        footer a { color: #94a3b8; }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 1.6em; }
-            .hero-stats { gap: 24px; }
-            .categories { grid-template-columns: 1fr 1fr; }
-        }
+        body { font-family: 'Helvetica Neue', 'Noto Sans JP', sans-serif; background: linear-gradient(135deg, #1e3a5f, #2563eb); color: #fff; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .container { text-align: center; padding: 40px 20px; }
+        h1 { font-size: 2.5em; margin-bottom: 16px; }
+        p { font-size: 1.1em; opacity: 0.8; margin-bottom: 32px; }
+        .badge { background: rgba(255,255,255,0.15); padding: 8px 20px; border-radius: 20px; font-size: 0.9em; }
     </style>
 </head>
 <body>
-
-<header>
-    <div class="header-inner">
-        <a href="/" class="logo">AI Tools <span>Lab</span></a>
-        <nav>
-            <a href="#categories">カテゴリ</a>
-            <a href="#articles">記事一覧</a>
-            <a href="#about">サイトについて</a>
-        </nav>
+    <div class="container">
+        <h1>AI Tools Lab</h1>
+        <p>AIツール比較・レビューサイト</p>
+        <p>現在、記事の品質チェック中です。<br>近日公開予定。</p>
+        <span class="badge">Coming Soon</span>
     </div>
-</header>
-
-<section class="hero">
-    <h1>最新AIツールを徹底比較<br>あなたに最適なツールが見つかる</h1>
-    <p>ライティング、画像生成、コーディング支援まで。実際に使って検証した本音レビューとおすすめランキングを掲載。</p>
-    <div class="hero-stats">
-        <div class="hero-stat"><div class="num">50+</div><div class="label">レビュー記事</div></div>
-        <div class="hero-stat"><div class="num">30+</div><div class="label">AIツール掲載</div></div>
-        <div class="hero-stat"><div class="num">毎週</div><div class="label">更新</div></div>
-    </div>
-</section>
-
-<section class="section" id="categories">
-    <h2 class="section-title">カテゴリから探す</h2>
-    <p class="section-subtitle">目的に合ったAIツールをカテゴリ別にご紹介</p>
-    <div class="categories">
-        <a href="#" class="cat-card">
-            <div class="cat-icon">&#9997;</div>
-            <h3>AIライティングツール</h3>
-            <p>ブログ記事・広告文・メルマガなどの文章作成を自動化</p>
-        </a>
-        <a href="#" class="cat-card">
-            <div class="cat-icon">&#127912;</div>
-            <h3>AI画像生成ツール</h3>
-            <p>テキストから高品質な画像を自動生成するツール</p>
-        </a>
-        <a href="#" class="cat-card">
-            <div class="cat-icon">&#128187;</div>
-            <h3>AIコード生成ツール</h3>
-            <p>プログラミングを支援するAIコーディングアシスタント</p>
-        </a>
-        <a href="#" class="cat-card">
-            <div class="cat-icon">&#127909;</div>
-            <h3>AI動画編集ツール</h3>
-            <p>動画制作・編集を効率化するAIソリューション</p>
-        </a>
-        <a href="#" class="cat-card">
-            <div class="cat-icon">&#128172;</div>
-            <h3>AIチャットボット</h3>
-            <p>カスタマーサポート・FAQ自動化ツール</p>
-        </a>
-        <a href="#" class="cat-card">
-            <div class="cat-icon">&#128200;</div>
-            <h3>AIビジネスツール</h3>
-            <p>議事録・翻訳・プレゼン作成などの業務効率化</p>
-        </a>
-    </div>
-</section>
-
-<section class="section" id="articles">
-    <h2 class="section-title">最新の比較・レビュー記事</h2>
-    <p class="section-subtitle">実際に使って検証した最新のAIツールレビュー</p>
-    <div class="articles">
-        <div class="article-card">
-            <div class="article-thumb" style="background: linear-gradient(135deg, #2563eb, #7c3aed);">&#9997;</div>
-            <div class="article-body">
-                <div class="article-meta">2026.03.28 | AIライティング</div>
-                <h3><a href="ai-writing-comparison.html">【2026年最新】AI文章作成ツール比較！おすすめ7選と失敗しない選び方</a></h3>
-                <p>ChatGPT、Claude、Jasperなど主要AIライティングツールを実際に使って徹底比較。</p>
-                <div style="margin-top: 8px;"><span class="tag">ライティング</span><span class="tag">比較</span></div>
-            </div>
-        </div>
-        <div class="article-card">
-            <div class="article-thumb" style="background: linear-gradient(135deg, #059669, #10b981);">&#128260;</div>
-            <div class="article-body">
-                <div class="article-meta">2026.03.28 | AI比較</div>
-                <h3><a href="chatgpt-alternatives.html">ChatGPT代替ツールおすすめ7選！用途別の選び方と比較を徹底解説</a></h3>
-                <p>ChatGPT以外のAIツールを探している方に。Claude、Gemini、Perplexityなどを比較。</p>
-                <div style="margin-top: 8px;"><span class="tag">ChatGPT</span><span class="tag">代替</span></div>
-            </div>
-        </div>
-        <div class="article-card">
-            <div class="article-thumb" style="background: linear-gradient(135deg, #dc2626, #f97316);">&#127912;</div>
-            <div class="article-body">
-                <div class="article-meta">2026.03.28 | AI画像生成</div>
-                <h3><a href="ai-image-generators.html">AI画像生成 無料おすすめ7選！初心者でも簡単に使えるツールを徹底レビュー</a></h3>
-                <p>Midjourney、DALL-E、Stable Diffusionなど無料で使えるAI画像生成ツールを比較。</p>
-                <div style="margin-top: 8px;"><span class="tag">画像生成</span><span class="tag">無料</span></div>
-            </div>
-        </div>
-        <div class="article-card">
-            <div class="article-thumb" style="background: linear-gradient(135deg, #7c3aed, #a855f7);">&#128187;</div>
-            <div class="article-body">
-                <div class="article-meta">2026.03.28 | AIライティング</div>
-                <h3><a href="ai-writing-tools.html">AIライティングツール おすすめ7選！選び方と比較を徹底解説</a></h3>
-                <p>AIライティングツールの特徴・料金・メリット・デメリットを徹底比較。初心者からプロまで。</p>
-                <div style="margin-top: 8px;"><span class="tag">ライティング</span><span class="tag">おすすめ</span></div>
-            </div>
-        </div>
-        <div class="article-card">
-            <div class="article-thumb" style="background: linear-gradient(135deg, #0891b2, #06b6d4);">&#128187;</div>
-            <div class="article-body">
-                <div class="article-meta">2026.03.29 | AIコーディング</div>
-                <h3><a href="ai-code-generators.html">AIコード生成ツール比較2026：開発者が選ぶべき最強ツールはどれ？</a></h3>
-                <p>GitHub Copilot、Cursor、Claude Codeなど主要AIコーディングツールを徹底比較。</p>
-                <div style="margin-top: 8px;"><span class="tag">コード生成</span><span class="tag">開発者向け</span></div>
-            </div>
-        </div>
-        <div class="article-card">
-            <div class="article-thumb" style="background: linear-gradient(135deg, #d946ef, #a855f7);">&#127909;</div>
-            <div class="article-body">
-                <div class="article-meta">2026.03.29 | AI動画編集</div>
-                <h3><a href="ai-video-editors.html">AI動画編集ソフト おすすめ7選【2026年最新】選び方と比較ガイド</a></h3>
-                <p>Runway、CapCut、Descript等のAI動画編集ツールを料金・機能で徹底比較。</p>
-                <div style="margin-top: 8px;"><span class="tag">動画編集</span><span class="tag">2026年</span></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="cta" id="about">
-    <h2>AI Tools Lab について</h2>
-    <p>実際にAIツールを使い込んだ上で、本音のレビューと比較情報をお届けしています。<br>毎週新しいAIツールのレビュー記事を更新中。</p>
-    <a href="#articles" class="cta-btn">最新記事を読む</a>
-</section>
-
-<footer>
-    <p>&copy; 2026 AI Tools Lab. All rights reserved.</p>
-    <p style="margin-top: 8px;"><a href="#">プライバシーポリシー</a> | <a href="#">お問い合わせ</a> | <a href="#">運営者情報</a></p>
-</footer>
-
 </body>
 </html>
