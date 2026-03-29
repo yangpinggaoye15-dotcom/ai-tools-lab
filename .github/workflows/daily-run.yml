@@ -1,0 +1,204 @@
+name: NexusAI Daily Runner
+
+on:
+  schedule:
+    # 毎日日本時間9:00に実行（UTC 0:00 = JST 9:00）
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  daily-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install anthropic pyyaml google-generativeai
+
+      - name: Run daily tasks
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        working-directory: ../
+        run: |
+          # affiliate-generatorのコードをチェックアウト先からコピー
+          # GitHub Actionsではafffiliate-siteリポジトリのみなので
+          # daily_runner.pyを直接実行する代わりに、インラインで実行
+
+          python - <<'PYTHON_SCRIPT'
+          import json, os, time, sys
+          from datetime import datetime
+          from pathlib import Path
+
+          # ディレクトリ設定
+          WORK_DIR = Path(os.environ.get("GITHUB_WORKSPACE", "."))
+          REPORT_DIR = WORK_DIR / "reports"
+          REPORT_DIR.mkdir(exist_ok=True)
+
+          print(f"=== NexusAI Daily Run: {datetime.now().strftime('%Y-%m-%d %H:%M')} ===")
+
+          # API確認
+          has_anthropic = bool(os.environ.get("ANTHROPIC_API_KEY"))
+          has_gemini = bool(os.environ.get("GEMINI_API_KEY"))
+          print(f"Anthropic API: {'available' if has_anthropic else 'NOT SET'}")
+          print(f"Gemini API: {'available' if has_gemini else 'NOT SET'}")
+
+          if not has_anthropic and not has_gemini:
+              print("ERROR: No API keys available. Set secrets in GitHub repository settings.")
+              # エラーレポートを生成
+              error_html = f"""<!DOCTYPE html>
+          <html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>日次レポート - エラー | NexusAI</title>
+          <style>body{{font-family:sans-serif;background:#f1f5f9;padding:20px;}}
+          .card{{background:#fff;border-radius:10px;padding:20px;max-width:600px;margin:0 auto;}}
+          .error{{color:#ef4444;font-weight:bold;}}</style></head><body>
+          <div class="card"><h1>NexusAI 日次レポート</h1>
+          <p class="error">APIキーが設定されていません。</p>
+          <p>GitHub リポジトリの Settings → Secrets and variables → Actions で以下を設定してください:</p>
+          <ul><li>ANTHROPIC_API_KEY</li><li>GEMINI_API_KEY</li></ul>
+          <p>生成日時: {datetime.now().strftime('%Y年%m月%d日 %H:%M')}</p></div></body></html>"""
+              (REPORT_DIR / "index.html").write_text(error_html, encoding="utf-8")
+              sys.exit(0)  # エラーでもレポートは公開する
+
+          # --- 記事生成 ---
+          import anthropic
+
+          client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+
+          KEYWORDS = [
+              {"keyword": "AI文章作成ツール 比較 2026", "category": "ai_tools"},
+              {"keyword": "ChatGPT 代替ツール おすすめ", "category": "ai_tools"},
+              {"keyword": "AI画像生成 無料 おすすめ", "category": "ai_tools"},
+              {"keyword": "AIコード生成ツール 比較", "category": "ai_tools"},
+              {"keyword": "AI動画編集ソフト おすすめ", "category": "ai_tools"},
+              {"keyword": "AI議事録ツール 比較", "category": "ai_tools"},
+              {"keyword": "AIプレゼン作成ツール おすすめ", "category": "ai_tools"},
+              {"keyword": "AI翻訳ツール 精度 比較", "category": "ai_tools"},
+              {"keyword": "AIチャットボット 作り方 無料", "category": "ai_tools"},
+              {"keyword": "Claude vs ChatGPT 違い 比較", "category": "ai_tools"},
+          ]
+
+          # 日付ベースでキーワードをローテーション
+          day_of_year = datetime.now().timetuple().tm_yday
+          start_idx = (day_of_year * 3) % len(KEYWORDS)
+          targets = [KEYWORDS[(start_idx + i) % len(KEYWORDS)] for i in range(3)]
+
+          results = {"generated": 0, "failed": 0, "titles": [], "total_chars": 0}
+
+          for kw in targets:
+              print(f"\nGenerating: {kw['keyword']}")
+              try:
+                  msg = client.messages.create(
+                      model="claude-sonnet-4-6",
+                      max_tokens=4096,
+                      temperature=0.7,
+                      messages=[{"role": "user", "content": f"""SEOに精通したライターとして、「{kw['keyword']}」に関する3000文字以上のアフィリエイト記事を書いてください。
+
+          必須要件:
+          - 冒頭に「※本記事にはアフィリエイト広告が含まれます」
+          - 事実には出典を明記（例:「月額$20（OpenAI公式サイトより）」）
+          - 主観的な評価には「**筆者の見解:**」ラベルを付ける
+          - 末尾に「## 参考文献・情報源」セクション（公式URL 5件以上）
+          - Markdownフォーマットで出力"""}],
+                  )
+                  content = msg.content[0].text
+                  results["generated"] += 1
+                  results["total_chars"] += len(content)
+                  # タイトルを抽出
+                  for line in content.split("\n"):
+                      if line.startswith("# "):
+                          results["titles"].append(line[2:].strip())
+                          break
+                  else:
+                      results["titles"].append(kw["keyword"])
+                  print(f"  OK: {len(content)} chars")
+                  time.sleep(2)
+              except Exception as e:
+                  print(f"  FAILED: {e}")
+                  results["failed"] += 1
+
+          # --- レポート生成 ---
+          now = datetime.now()
+          titles_html = "".join(f"<li>{t}</li>" for t in results["titles"])
+
+          report_html = f"""<!DOCTYPE html>
+          <html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>日次レポート {now.strftime('%Y年%m月%d日')} | NexusAI</title>
+          <style>
+          *{{margin:0;padding:0;box-sizing:border-box;}}
+          body{{font-family:'Helvetica Neue','Noto Sans JP',sans-serif;background:#f1f5f9;color:#333;font-size:14px;}}
+          .header{{background:#1e293b;color:#fff;padding:16px;text-align:center;}}
+          .header h1{{font-size:1.1em;}}
+          .header .date{{font-size:0.85em;opacity:0.7;margin-top:4px;}}
+          .header .badge{{background:#10b981;padding:2px 10px;border-radius:10px;font-size:0.75em;margin-left:8px;}}
+          .container{{max-width:600px;margin:0 auto;padding:12px;}}
+          .card{{background:#fff;border-radius:10px;padding:16px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,0.08);}}
+          .card h2{{font-size:0.95em;color:#1e293b;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid #e2e8f0;}}
+          .metric{{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f1f5f9;font-size:0.9em;}}
+          .metric .label{{color:#666;}}
+          .metric .value{{font-weight:700;color:#1e293b;}}
+          .metric .value.good{{color:#10b981;}}
+          .metric .value.bad{{color:#ef4444;}}
+          ul{{padding-left:20px;margin:8px 0;font-size:0.85em;}}
+          li{{margin:4px 0;}}
+          .footer{{text-align:center;padding:16px;font-size:0.75em;color:#94a3b8;}}
+          </style></head><body>
+          <div class="header">
+          <h1>NexusAI 日次レポート <span class="badge">GitHub Actions</span></h1>
+          <div class="date">{now.strftime('%Y年%m月%d日 %H:%M')} 自動生成</div>
+          </div>
+          <div class="container">
+          <div class="card">
+          <h2>コンテンツ部門</h2>
+          <div class="metric"><span class="label">記事生成数</span><span class="value">{results['generated']}本</span></div>
+          <div class="metric"><span class="label">生成失敗</span><span class="value {'bad' if results['failed'] > 0 else 'good'}">{results['failed']}本</span></div>
+          <div class="metric"><span class="label">総文字数</span><span class="value">{results['total_chars']:,}字</span></div>
+          {f'<h3 style="font-size:0.85em;margin-top:8px;">生成した記事:</h3><ul>{titles_html}</ul>' if titles_html else ''}
+          </div>
+          <div class="card">
+          <h2>実行環境</h2>
+          <div class="metric"><span class="label">実行基盤</span><span class="value">GitHub Actions</span></div>
+          <div class="metric"><span class="label">API</span><span class="value">Claude</span></div>
+          <div class="metric"><span class="label">推定API費用 [推測]</span><span class="value">{results['generated'] * 50}円</span></div>
+          </div>
+          <div class="card">
+          <h2>次のアクション（人間）</h2>
+          <div class="metric"><span class="label">記事レビュー</span><span class="value">スマホで確認 →</span></div>
+          <p style="font-size:0.85em;color:#666;margin-top:8px;">
+          <a href="../review/" style="color:#2563eb;">レビューページ</a>で記事を確認し、PCのダッシュボード(localhost:8090)で承認してください。
+          </p>
+          </div>
+          </div>
+          <div class="footer">NexusAI Daily Report - GitHub Actions 自動生成</div>
+          </body></html>"""
+
+          # 保存
+          date_str = now.strftime("%Y%m%d")
+          (REPORT_DIR / f"{date_str}.html").write_text(report_html, encoding="utf-8")
+          (REPORT_DIR / "index.html").write_text(report_html, encoding="utf-8")
+
+          # JSON
+          (REPORT_DIR / f"{date_str}.json").write_text(
+              json.dumps({"date": now.isoformat(), "results": results}, ensure_ascii=False, indent=2),
+              encoding="utf-8"
+          )
+
+          print(f"\n=== Done: {results['generated']} articles generated ===")
+          PYTHON_SCRIPT
+
+      - name: Commit and push reports
+        run: |
+          git config user.name "NexusAI Bot"
+          git config user.email "bot@nexusai.local"
+          git add reports/ || true
+          git diff --staged --quiet || git commit -m "Daily report $(date +%Y-%m-%d)"
+          git push
