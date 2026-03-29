@@ -7,6 +7,7 @@ body{font-family:'Helvetica Neue','Noto Sans JP',sans-serif;background:#f1f5f9;c
 .header{background:#1e293b;color:#fff;padding:16px;text-align:center;}
 .header h1{font-size:1.1em;}
 .header .date{font-size:0.85em;opacity:0.7;margin-top:4px;}
+.header .badge{background:#10b981;padding:2px 10px;border-radius:10px;font-size:0.75em;margin-left:8px;}
 .container{max-width:600px;margin:0 auto;padding:12px;}
 .card{background:#fff;border-radius:10px;padding:16px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,0.08);}
 .card h2{font-size:0.95em;color:#1e293b;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid #e2e8f0;}
@@ -14,58 +15,36 @@ body{font-family:'Helvetica Neue','Noto Sans JP',sans-serif;background:#f1f5f9;c
 .metric .label{color:#666;}
 .metric .value{font-weight:700;color:#1e293b;}
 .metric .value.good{color:#10b981;}
-.metric .value.warn{color:#f59e0b;}
 .metric .value.bad{color:#ef4444;}
-.alert{border-radius:6px;}
 ul{padding-left:20px;margin:8px 0;font-size:0.85em;}
 li{margin:4px 0;}
 .footer{text-align:center;padding:16px;font-size:0.75em;color:#94a3b8;}
 </style></head><body>
 <div class="header">
-<h1>NexusAI 日次レポート</h1>
-<div class="date">2026年03月29日 16:46 自動生成</div>
+<h1>NexusAI 日次レポート <span class="badge">GitHub Actions</span></h1>
+<div class="date">2026年03月29日 10:00 自動生成</div>
 </div>
 <div class="container">
-
-<div class="card">
-<h2>内部監査部</h2>
-<div class="alert" style="border-left:4px solid #ef4444;padding:8px 12px;margin:4px 0;background:#f8fafc;font-size:0.85em;"><strong style="color:#ef4444;">[重大]</strong> アフィリエイト開示なしの記事: 3本</div>
-</div>
-
 <div class="card">
 <h2>コンテンツ部門</h2>
 <div class="metric"><span class="label">記事生成数</span><span class="value">3本</span></div>
 <div class="metric"><span class="label">生成失敗</span><span class="value good">0本</span></div>
-<div class="metric"><span class="label">総文字数</span><span class="value">14,934字</span></div>
-<div class="metric"><span class="label">累積記事数</span><span class="value">12本</span></div>
-<h3 style="font-size:0.85em;margin-top:8px;">生成した記事:</h3><ul><li>AI議事録ツール比較2024年版｜選び方と主要7サービスを徹底解説</li><li>AIプレゼン作成ツール おすすめ7選【2025年最新】選び方と比較を徹底解説</li><li>AI翻訳ツール精度を徹底比較！2024年版おすすめランキングと選び方ガイド</li></ul>
+<div class="metric"><span class="label">総文字数</span><span class="value">15,706字</span></div>
+<h3 style="font-size:0.85em;margin-top:8px;">生成した記事:</h3><ul><li>AI動画編集ソフト おすすめ7選【2025年最新版】初心者からプロまで徹底比較</li><li>AI議事録ツール比較2024年最新版｜おすすめ7選を徹底解説</li><li>AIプレゼン作成ツール おすすめ7選【2025年最新】時短・高品質なスライドを自動生成</li></ul>
 </div>
-
 <div class="card">
-<h2>QA/コンプライアンス部門</h2>
-<div class="metric"><span class="label">チェック実行</span><span class="value">8本</span></div>
-<div class="metric"><span class="label">通過</span><span class="value good">5本</span></div>
-<div class="metric"><span class="label">不通過</span><span class="value bad">3本</span></div>
-<div class="metric"><span class="label">参考文献なし</span><span class="value bad">2件</span></div>
-<div class="metric"><span class="label">景表法リスク</span><span class="value good">0件</span></div>
-<div class="metric"><span class="label">開示不足</span><span class="value bad">3件</span></div>
+<h2>実行環境</h2>
+<div class="metric"><span class="label">実行基盤</span><span class="value">GitHub Actions</span></div>
+<div class="metric"><span class="label">API</span><span class="value">Claude</span></div>
+<div class="metric"><span class="label">推定API費用 [推測]</span><span class="value">150円</span></div>
 </div>
-
 <div class="card">
-<h2>マーケティング/SEO部門</h2>
-<div class="metric"><span class="label">公開ページ数</span><span class="value">1</span></div>
-<div class="metric"><span class="label">レビュー待ち</span><span class="value">0</span></div>
-<div class="metric"><span class="label">承認済み</span><span class="value good">0</span></div>
-<div class="metric"><span class="label">差戻し</span><span class="value">25</span></div>
+<h2>次のアクション（人間）</h2>
+<div class="metric"><span class="label">記事レビュー</span><span class="value">スマホで確認 →</span></div>
+<p style="font-size:0.85em;color:#666;margin-top:8px;">
+<a href="../review/" style="color:#2563eb;">レビューページ</a>で記事を確認し、PCのダッシュボード(localhost:8090)で承認してください。
+</p>
 </div>
-
-<div class="card">
-<h2>ファイナンス部門</h2>
-<div class="metric"><span class="label">本日API呼出</span><span class="value">16回</span></div>
-<div class="metric"><span class="label">推定費用 [推測]</span><span class="value">400円</span></div>
-<div class="metric"><span class="label">1記事あたり費用</span><span class="value">50円</span></div>
 </div>
-
-</div>
-<div class="footer">NexusAI Daily Report - 自動生成</div>
+<div class="footer">NexusAI Daily Report - GitHub Actions 自動生成</div>
 </body></html>

@@ -1,46 +1,13 @@
 {
-  "date": "2026-03-29T16:46:27.235473",
+  "date": "2026-03-29T10:00:45.720040",
   "results": {
-    "content": {
-      "articles_generated": 3,
-      "articles_failed": 0,
-      "total_chars": 14934,
-      "titles": [
-        "AI議事録ツール比較2024年版｜選び方と主要7サービスを徹底解説",
-        "AIプレゼン作成ツール おすすめ7選【2025年最新】選び方と比較を徹底解説",
-        "AI翻訳ツール精度を徹底比較！2024年版おすすめランキングと選び方ガイド"
-      ]
-    },
-    "qa": {
-      "checked": 8,
-      "passed": 5,
-      "failed": 3,
-      "issues": {
-        "no_references": 2,
-        "legal_warnings": 0,
-        "no_disclosure": 3,
-        "unverified_numbers": 4
-      }
-    },
-    "finance": {
-      "api_calls_today": 16,
-      "estimated_cost": 400,
-      "total_articles": 12,
-      "cost_per_article": 50
-    },
-    "marketing": {
-      "published_pages": 1,
-      "review_pending": 0,
-      "approved": 0,
-      "rejected": 25
-    },
-    "audit": {
-      "alerts": [
-        {
-          "severity": "重大",
-          "message": "アフィリエイト開示なしの記事: 3本"
-        }
-      ]
-    }
+    "generated": 3,
+    "failed": 0,
+    "titles": [
+      "AI動画編集ソフト おすすめ7選【2025年最新版】初心者からプロまで徹底比較",
+      "AI議事録ツール比較2024年最新版｜おすすめ7選を徹底解説",
+      "AIプレゼン作成ツール おすすめ7選【2025年最新】時短・高品質なスライドを自動生成"
+    ],
+    "total_chars": 15706
   }
 }
