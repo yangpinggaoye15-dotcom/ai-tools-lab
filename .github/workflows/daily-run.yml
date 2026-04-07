@@ -2,8 +2,8 @@ name: NexusAI Daily Runner
 
 on:
   schedule:
-    # 毎日日本時間9:00に実行（UTC 0:00 = JST 9:00）
-    - cron: '0 0 * * *'
+    # 3時間おきに実行（JST 0:00, 3:00, 6:00, 9:00, 12:00, 15:00, 18:00, 21:00）
+    - cron: '0 */3 * * *'
   workflow_dispatch:  # 手動実行も可能
 
 permissions:
