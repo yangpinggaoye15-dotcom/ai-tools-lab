@@ -1,0 +1,42 @@
+{
+  "date": "2026-04-12T22:54:08.521170",
+  "results": {
+    "content": {
+      "articles_generated": 0,
+      "articles_failed": 0,
+      "total_chars": 0,
+      "titles": []
+    },
+    "qa": {
+      "checked": 6,
+      "passed": 6,
+      "failed": 0,
+      "issues": {
+        "no_references": 0,
+        "legal_warnings": 0,
+        "no_disclosure": 0,
+        "unverified_numbers": 15
+      }
+    },
+    "finance": {
+      "api_calls_today": 12,
+      "estimated_cost": 300,
+      "total_articles": 20,
+      "cost_per_article": 50
+    },
+    "marketing": {
+      "published_pages": 35,
+      "review_pending": 0,
+      "approved": 0,
+      "rejected": 45
+    },
+    "audit": {
+      "alerts": [
+        {
+          "severity": "OK",
+          "message": "重大な問題なし"
+        }
+      ]
+    }
+  }
+}
