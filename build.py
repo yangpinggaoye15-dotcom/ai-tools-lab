@@ -243,31 +243,49 @@ def build_all():
         print("記事ディレクトリが見つかりません")
         return []
 
-    slugs = {
+    # 日本語→英語マッピング（部分一致）
+    ja_to_en = {
+        'AI画像生成': 'ai-image-generation',
+        'AI動画編集': 'ai-video-editing',
+        'AIエージェント': 'ai-agent',
+        'AI文章作成': 'ai-writing',
+        'AIコード生成': 'ai-code-generation',
+        'AI翻訳ツール': 'ai-translation',
+        'AIプレゼン作成': 'ai-presentation',
+        'AI議事録ツール': 'ai-minutes',
         'AIライティングツール': 'ai-writing-tools',
-        'AI文章作成ツール': 'ai-writing-comparison',
-        'ChatGPT': 'chatgpt-alternatives',
-        'AI画像生成': 'ai-image-generators',
-        'AIコード生成': 'ai-code-generators',
-        'AI動画編集': 'ai-video-editors',
-        'AI議事録': 'ai-meeting-notes',
-        'AIプレゼン': 'ai-presentation',
-        'AI翻訳': 'ai-translation',
         'AIチャットボット': 'ai-chatbot',
+        'AI副業': 'ai-side-job',
+        'ChatGPT': 'chatgpt',
+        '代替ツール': 'alternatives',
+        '無料': 'free',
+        'おすすめ': 'recommended',
+        '比較': 'comparison',
+        '最新': 'latest',
+        '初心者': 'beginner',
+        '稼ぎ方': 'how-to-earn',
         'server_comparison': 'server-comparison',
         'vpn_comparison': 'vpn-comparison',
         'レンタルサーバー': 'server-comparison',
-        'VPN': 'vpn-comparison',
+        'VPN': 'vpn',
         'Claude_vs': 'claude-vs-chatgpt',
     }
 
+    def make_slug(filename: str) -> str:
+        """ファイル名からURL-safeなスラッグを生成"""
+        slug = filename
+        for ja, en in ja_to_en.items():
+            slug = slug.replace(ja, en)
+        # 残りの日本語文字を除去
+        slug = re.sub(r'[^\x00-\x7F]', '', slug)
+        # 日付部分を保持しつつ整形
+        slug = re.sub(r'[_\s]+', '-', slug).strip('-')
+        slug = re.sub(r'-+', '-', slug)
+        return slug.lower()
+
     results = []
     for md_file in sorted(articles_dir.glob('*.md')):
-        slug = 'article'
-        for keyword, s in slugs.items():
-            if keyword in md_file.name:
-                slug = s
-                break
+        slug = make_slug(md_file.stem)
 
         info = build_article_page(md_file, output_dir, slug)
         print(f"Built: {info['path']} ({info['title']})")
