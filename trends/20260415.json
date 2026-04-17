@@ -1,0 +1,1021 @@
+{
+  "gemini_search": {
+    "source": "Gemini検索（リアルタイム）",
+    "region": "全世界",
+    "data": {
+      "search_date": "2026年04月15日",
+      "realtime_trends": [
+        {
+          "topic": "AI-Native開発プラットフォームとコンテキスト駆動型アーキテクチャ",
+          "description": "AIエージェントが関連データやツールに安全にアクセスし、差別化された製品やサービスを可能にする。",
+          "platform": "ニュース",
+          "regions": [
+            "グローバル"
+          ],
+          "category": "テック",
+          "buzz_level": "高",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHA-ld439ZYhK_zOrqfJDwzZmc3PYp5pdAsR9_GK9dEy_1Ue9ud2YC5cBZuaeOnZnRI9q_H6JU94Y790FOBKKVGCZ1_xfjUZN4Q7SsPkc9MrMblKoCVG9lws2kMKV06FMQyf1qLuDOk10Obfm1eJR8wia_-r-8iVn_uoVRQy3GohMg35iX4Wuwp71gXJ9NxvBT8J0J8n-dpi1l8Tm0PGLlgqk=",
+          "who": "JPMorgan Chase, Gartner, Globant",
+          "why": "企業AIの成功には、エージェントが関連データやツールに安全にアクセスできる環境が不可欠なため。",
+          "timeline": "成長期",
+          "future": "AI開発の主流となり、より高度な自動化とパーソナライズされたサービスが普及する。"
+        },
+        {
+          "topic": "ソーシャルメディアにおけるAI駆動型コンテンツ作成とマイクロコミュニティ",
+          "description": "AIが生成したアートや動画がフィードを支配し、Discordのようなマイクロコミュニティが従来の公開エンゲージメントを上回る。",
+          "platform": "Instagram/TikTok/X",
+          "regions": [
+            "グローバル"
+          ],
+          "category": "社会",
+          "buzz_level": "高",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBYIBBQp7fnWi8tEGx1gARHbuMdJ27FsnR1emjvfNXYTFVybqFtnm0RiBUo5myvJlUc8DZA8dCL6kygBu3-giCmWor9ufmO31qlbs8Uk3gMSWXB3SJjfzGq2P4593JpbP0csGPF1ckmLXm-m_sTCBH_5MS2Y0c0Q=",
+          "who": "コンテンツクリエイター、AIツール開発企業、ソーシャルメディアプラットフォーム",
+          "why": "パーソナライズされたコンテンツの需要と、より親密なコミュニティでの交流を求めるユーザーが増加しているため。",
+          "timeline": "成長期",
+          "future": "AIによるコンテンツ生成がさらに高度化し、ニッチなコミュニティがブランドエンゲージメントの鍵となる。"
+        },
+        {
+          "topic": "日本のECにおける「タイパ（タイムパフォーマンス）」重視",
+          "description": "共働き世帯やZ世代の影響で、小型食洗機、ロボット掃除機、多機能電気圧力鍋、時短冷凍食品など、時間を節約できる商品が人気。",
+          "platform": "EC・物販",
+          "regions": [
+            "日本"
+          ],
+          "category": "EC・物販",
+          "buzz_level": "高",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwHpZxVsD8TzxpSyB4MhcBQg31r8joSeOa9WnWxq5Lc0gqU3pi5dfEyoT45QYWQW3Nq_0Nrb6rIu1RUHUqj8DS1nnV0zLGIKLXejwQZmpyjwfwbuL1tbDKwql1",
+          "who": "日本の消費者、EC事業者、家電メーカー、食品メーカー",
+          "why": "新生活需要と、効率を重視するライフスタイルの変化により、時間節約型商品への需要が高まっているため。",
+          "timeline": "ピーク",
+          "future": "タイパはECの標準的な価値観となり、より多様な時短商品・サービスが登場する。"
+        },
+        {
+          "topic": "ECライブ販売市場の急成長",
+          "description": "2026年の日本におけるライブコマース市場は1兆2000億円を超え、前年比20.4%以上の成長を記録。",
+          "platform": "EC・物販",
+          "regions": [
+            "日本",
+            "グローバル"
+          ],
+          "category": "EC・物販",
+          "buzz_level": "高",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9c4na0cSyyb9tZOsrE89BxXg9jEUhy3jWDZX0mhj4my627jXPtE7wCmXNHeJGyjmU8Fjt1PGFncSKh3m30zXKiYWhr5meHsIgGxjFvUYRtdaCOzkgHHkp4oBc0Ljm9MTbrwOUTwCVqUo9",
+          "who": "EC事業者、ブランド、インフルエンサー、消費者",
+          "why": "スマートフォンの普及とSNSのライブ機能発展、消費者のリアルタイム双方向コミュニケーション志向の高まり。",
+          "timeline": "成長期",
+          "future": "専門特化したプラットフォームが増え、ユーザー参加型コンテンツと多様な配信戦略が成功の鍵となる。"
+        },
+        {
+          "topic": "ゲーム業界におけるレトロデザインと嗅覚没入体験",
+          "description": "ノスタルジーを刺激するレトロデザインのコントローラーや、嗅覚を通じた没入体験を提供するアロマエンターテイメントシステム「The Scentbar」が注目される。",
+          "platform": "ゲーム",
+          "regions": [
+            "日本",
+            "グローバル"
+          ],
+          "category": "エンタメ・ゲーム・カルチャー",
+          "buzz_level": "中",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2s8rK0J8kh9ItdylQw35VfyV2ZcturLjIv7PYZKopoQlmwNc5i5ehNFtaClDt4JnS-GCEALVmAhoOEVJS0qk74PIQ1V2XOK9o5nDeOUqIdmfkVQ7HZkb-GW-xyzio8Kv0m0jTJr28Iv-UXQJELVpvc4UrIg=",
+          "who": "ZESTUM、ゲームハードウェアメーカー、ゲーマー",
+          "why": "過去への郷愁と、より五感を刺激する新しいゲーム体験への需要が高まっているため。",
+          "timeline": "黎明期",
+          "future": "レトロゲーム市場は安定成長し、嗅覚や触覚など多感覚を統合した没入型エンタメが普及する。"
+        },
+        {
+          "topic": "AIにおける「ダークファクトリー」の概念",
+          "description": "AIがコードの大部分を書き、人間の介入なしに運用される「暗闇の工場」の時代が到来する可能性。",
+          "platform": "ニュース",
+          "regions": [
+            "グローバル"
+          ],
+          "category": "テック",
+          "buzz_level": "中",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEIXKhb_zyuqfcBAFbIQ_bPbwDPsaMVZ6oYpQ9P1CICiLtwnObX1HFX4SeQd5YteHClJqN0xrx5VPKbvo4louArCps0BSkvLgIegXXTytHLEGklOM7p7rN8IBhBGBpb7lqKYrtF_dGuPaVMStyTapwtdmUJcvtrzWyHq1zArQIgly1TPzq7",
+          "who": "サイモン・ウィリソン (Django共同開発者), AI開発者",
+          "why": "AIのコード生成能力が向上し、人間によるレビューの必要性が薄れることで、完全自動化された開発プロセスが現実味を帯びているため。",
+          "timeline": "黎明期",
+          "future": "ソフトウェア開発のパラダイムが大きく変化し、AIが主導する開発環境が一般的になる。"
+        },
+        {
+          "topic": "SusHi Tech Tokyo 2026におけるスタートアップとイノベーション",
+          "description": "AI、Robotics、Resilience、Entertainmentの4分野に焦点を当て、国内外のスタートアップ、VC、都市リーダーが集結する。",
+          "platform": "ニュース",
+          "regions": [
+            "日本",
+            "グローバル"
+          ],
+          "category": "ビジネス・経済・スタートアップ",
+          "buzz_level": "高",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdFNVE6gR7WEjU_P4bqafkvK_NZCZuhld-4MKaKBxSLxCY8XmPz1u1yxwHPAA3GgzZmfEMwwOpoZbfi7cFi7qFwH5keOptrbyDqwtgYMgNwwGMyh4V2a_lmVHSGgweszunoIJByiE_JE4=",
+          "who": "東京都、スタートアップ、ベンチャーキャピタル、大企業",
+          "why": "日本のスタートアップエコシステムの強化とグローバル資本へのアクセス機会創出、都市外交の場としての機能拡充。",
+          "timeline": "成長期",
+          "future": "東京がアジアのイノベーションハブとしての地位を確立し、地方発のイノベーションも世界へ繋がる。"
+        },
+        {
+          "topic": "モバイルゲームの新作ラッシュ",
+          "description": "2026年4月は「ポケモンチャンピオンズ」など、エキサイティングなRPGからパズルゲームまで多数の新作モバイルゲームが登場。",
+          "platform": "YouTube/ゲームニュース",
+          "regions": [
+            "グローバル"
+          ],
+          "category": "エンタメ・ゲーム・カルチャー",
+          "buzz_level": "高",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWwE26BdJtEXMHMxegXQR9IGLsMrAdHjH2OhKI7og68o1iF-wos9-UeS5cSafJITGo4UjZZjAtU4xMUZMHIgdoJMYEqO1uXbG6RUox2uLiCRHUGCzdVHd7oTGy8NG8zUH1xb5KskUWbH-xkiPFGcrf8hNhOHjzjdVxDE1enBn-lH428BcIY1pO5nKCUw_VKB56lhJAhDVzlpK-BCqeDa0UL21hR2tQWWIdkhSg_e70sbf0Y2Km2xuF5Y29mbwihFTKPTMChA==",
+          "who": "ゲーム開発会社 (任天堂、カプコン、ソニーなど), モバイルゲーマー",
+          "why": "モバイルデバイスの普及と技術進化により、高品質なゲーム体験が手軽に楽しめるようになったため。",
+          "timeline": "ピーク",
+          "future": "クラウドゲーミングやAIを活用したパーソナライズされたモバイルゲーム体験が進化する。"
+        },
+        {
+          "topic": "ソーシャルメディアにおけるノスタルジーコンテンツ",
+          "description": "TikTokで「I'm never dancing to Hannah Montana」のような、過去の文化や共有体験を呼び起こすコンテンツが流行。",
+          "platform": "TikTok",
+          "regions": [
+            "グローバル"
+          ],
+          "category": "エンタメ・ゲーム・カルチャー",
+          "buzz_level": "中",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHq_guPO7jZulBrcSyyO8j0gY1F1VkP-BeTPlOxk7YPPYJpqAUSj5rInnBRNa84h93iNhS52NQl58LdYSUT6CUoifmhGXes5NWWYKSormz-SMfvSsaYCelq_w5xY1ffgVC4AeC2pRyDL4zCoSmIAawbQPPSB98=",
+          "who": "Z世代、ミレニアル世代、コンテンツクリエイター",
+          "why": "過去の思い出や共感を求める心理、短い動画で手軽に共有できるフォーマットがマッチしているため。",
+          "timeline": "成長期",
+          "future": "特定の世代に響くニッチなノスタルジーコンテンツが多様化し、ブランドマーケティングにも活用される。"
+        },
+        {
+          "topic": "グローバル経済の成長鈍化とインフレ",
+          "description": "2026年の世界経済成長率は3.1%と予測され、インフレは上昇傾向。中東での紛争や貿易摩擦、AIによる生産性向上への期待が影響。",
+          "platform": "ニュース",
+          "regions": [
+            "グローバル"
+          ],
+          "category": "ビジネス・経済・スタートアップ",
+          "buzz_level": "高",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcAeRFwDj_NOfKbpVGd4XyoEAoCtFPvXHrZgKUlwWsNdc-DmGQZy7YjgtVvSbF-LoL3Z_SC2ExHK2bZb7I1iT9mtPDJzTAbk-Muv-egV7iuLO9-25BK_BXqvRnVwqN46dA9o4Go-7GX8KVVuWoNosiCaBZDSZNKrO0sFhWqiXPmzNwxqJIU97e657sdguspqMXdycfKjg==",
+          "who": "IMF, 国連, 各国政府、企業",
+          "why": "地政学的緊張、エネルギー価格の高騰、サプライチェーンの混乱、高水準の公的債務などが要因。",
+          "timeline": "ピーク",
+          "future": "政策立案者は適応性を高め、信頼性を強化し、国際協力を促進する必要がある。"
+        },
+        {
+          "topic": "AIモデル競争とエコシステムの標準化",
+          "description": "GPT-5.4、Gemini 3.1 Pro、Claude Opus 4.6などの主要AIモデルが性能競争を繰り広げ、Model Context Protocol (MCP)がAIエージェントの業界標準に。",
+          "platform": "ニュース",
+          "regions": [
+            "グローバル"
+          ],
+          "category": "テック",
+          "buzz_level": "高",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHF0ck-AoJ2naUiSnvSN8sBKlwHyWe64GH6KkiGIaiHqC0YoaV5Oc-9yCH4OgKeH-pR4TbUikIjq58tKIxaDSbiiTDXIplZwYDX8w3kniv-Q7PRgTEY4Mo0CmpqELx2GSsGgRq5q-8=",
+          "who": "OpenAI, Google, Anthropic, Linux Foundation",
+          "why": "AI技術の急速な進化と、異なるAIシステム間の相互運用性・連携の必要性が高まっているため。",
+          "timeline": "成長期",
+          "future": "AIモデルの多様化と専門化が進み、MCPのようなオープンなプロトコルがAIエコシステムの基盤を形成する。"
+        }
+      ],
+      "country_google_trends": [
+        {
+          "country": "日本",
+          "top_searches": [
+            "Nikkei 225",
+            "Japan News",
+            "Zootopia 2",
+            "Tokyo MER: Nankai Mission",
+            "F1"
+          ]
+        },
+        {
+          "country": "アメリカ",
+          "top_searches": [
+            "YouTube",
+            "Amazon",
+            "Facebook",
+            "Gmail",
+            "Wordle"
+          ]
+        },
+        {
+          "country": "韓国",
+          "top_searches": []
+        },
+        {
+          "country": "インド",
+          "top_searches": [
+            "today share market open",
+            "india",
+            "happy vaisakhi 2026",
+            "vishu date",
+            "IPL 2026"
+          ]
+        },
+        {
+          "country": "ヨーロッパ",
+          "top_searches": []
+        }
+      ],
+      "overseas_products_not_in_japan": [
+        {
+          "product": "The Scentbar (嗅覚没入型アロマエンターテイメントシステム)",
+          "trending_country": "グローバル",
+          "description": "ゲームや映画などに香りを取り入れ、嗅覚を通じた没入体験を提供するシステム。",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2s8rK0J8kh9ItdylQw35VfyV2ZcturLjIv7PYZKopoQlmwNc5i5ehNFtaClDt4JnS-GCEALVmAhoOEVJS0qk74PIQ1V2XOK9o5nDeOUqIdmfkVQ7HZkb-GW-xyzio8Kv0m0jTJr28Iv-UXQJELVpvc4UrIg=",
+          "why_trending": "よりリアルで多感覚的なエンターテイメント体験を求める需要が高まっているため。",
+          "japan_potential": "日本のゲーム・アニメ・映画市場は没入型体験への関心が高く、VR/ARコンテンツとの連携で大きな可能性がある。"
+        },
+        {
+          "product": "S-KIT (口腔モニタリングデバイス)",
+          "trending_country": "ドイツ (Any-Edge社が開発)",
+          "description": "呼気および唾液成分を分析し、歯周病の早期リスク評価を実現する小型センサーデバイス。",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3vxBw9gwYKsIidMLALI6fvgQrjJwj8Qrs5yB_nyIizlFaZ8XqyVD9OSR-h_vsalb9GjVofM5F8way17eTdXINQNxVX8nD-9ODj91KTTYvGw6uxUoU_aSfj1pwcTyXBQJWTLo9NunXx7eW4Mo9Mku8GN80ojh01lSP72rp",
+          "why_trending": "予防医療への関心の高まりと、手軽に健康状態をモニタリングできるデバイスへの需要。",
+          "japan_potential": "日本も高齢化社会であり、口腔ケアへの意識が高いため、予防医療デバイスとして市場開拓の余地がある。"
+        },
+        {
+          "product": "Omio (マルチモーダル予約プラットフォーム)",
+          "trending_country": "グローバル (日本市場参入)",
+          "description": "国際旅行者向けに、電車、バス、飛行機などの交通手段を一括で検索・予約できるプラットフォーム。",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUQpFzNuX53BfyVshmjqb8MQ4aOgk1e4TeqSD1U1aCDCGREXTvOrKOFeRbVpdt2bjEq3EImlDxnCFCjqpjv4291vNYONh13g5n_IdhrEozKBUYcg1IZeNlZMrPR6QfzeFo8_6DBDOt1LzF1ngnfLbTX15Xn9b5sndtkWnmeC5xnjz4krcwOzyejAzW7CYsBJXiuIblLzr2pqeu_YE4fMbsPQ00mYXkFbPhpt5H_IOtmkPY4egGlaF448bqDKVe97X8",
+          "why_trending": "旅行者の利便性向上と、複数の交通手段を効率的に組み合わせたいというニーズに応えるため。",
+          "japan_potential": "訪日外国人観光客の増加に伴い、複雑な日本の交通網をスムーズに利用できるサービスとして需要が見込まれる。"
+        }
+      ]
+    }
+  },
+  "youtube": {
+    "source": "YouTube急上昇",
+    "items": [],
+    "error": "The read operation timed out"
+  },
+  "google_trends": {
+    "source": "Google Trends",
+    "regions": {
+      "日本": [],
+      "アメリカ": [],
+      "韓国": [],
+      "インド": [],
+      "ドイツ": []
+    }
+  },
+  "newsapi": {
+    "source": "NewsAPI",
+    "categories": [
+      {
+        "name": "テクノロジー",
+        "items": [
+          {
+            "title": "Overwatch’s Next Season Looks Dope Except For One Thing I Have To Yell About - Kotaku",
+            "url": "https://kotaku.com/overwatch-season-2-diablo-sierra-soldier-76-mythic-2000687172",
+            "source": "Kotaku",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "Overwatch out on Nintendo Switch 2 tomorrow, up to 60 FPS and more - Nintendo Everything",
+            "url": "https://nintendoeverything.com/overwatch-out-on-nintendo-switch-2-tomorrow-up-to-60-fps-and-more/",
+            "source": "Nintendoeverything.com",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "'This Is What It Takes to Make Games at Our Level' — Former Naughty Dog Dev Recalls Crunch Culture for Games Like The Last of Us and Uncharted - IGN",
+            "url": "https://www.ign.com/articles/former-naughty-dog-dev-recalls-crunch-culture-for-games-like-the-last-of-us-and-uncharted",
+            "source": "IGN",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "iOS 26.5 beta 2 gives Apple Maps a new ads popup - 9to5Mac",
+            "url": "https://9to5mac.com/2026/04/13/ios-26-5-beta-2-gives-apple-maps-a-new-ads-popup/",
+            "source": "9to5Mac",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "Biggest US airline adds support for iOS 26 boarding passes in Wallet - 9to5Mac",
+            "url": "https://9to5mac.com/2026/04/13/apple-wallet-boarding-passes-american-airlines-ios-26/",
+            "source": "9to5Mac",
+            "published": "2026-04-13"
+          }
+        ]
+      },
+      {
+        "name": "ビジネス",
+        "items": [
+          {
+            "title": "Top Biotech Catapults On 'Unprecedented' Results In Cancer - Investor's Business Daily",
+            "url": "https://www.investors.com/news/technology/revolution-medicines-stock-pancreatic-cancer-treatment/",
+            "source": "Investor's Business Daily",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "Report: FBI raids Texas home of man suspected of firebombing Sam Altman’s S.F. mansion - San Francisco Chronicle",
+            "url": "https://www.sfchronicle.com/sf/article/altman-molotov-suspect-fbi-raid-22203989.php",
+            "source": "San Francisco Chronicle",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "What A Mess: Lufthansa Pilots & Flight Attendants Stage Back-To-Back Strikes - One Mile at a Time",
+            "url": "https://onemileatatime.com/news/lufthansa-pilots-flight-attendants-back-to-back-strikes/",
+            "source": "One Mile at a Time",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "Texas attorney general probes Lululemon over potential 'forever chemicals' in its activewear - CNBC",
+            "url": "https://www.cnbc.com/2026/04/13/texas-ag-probes-lululemon-over-potential-forever-chemicals.html",
+            "source": "CNBC",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "IBM folds to Trump anti-DEI push, admits no misconduct but pays $17M penalty - Ars Technica",
+            "url": "https://arstechnica.com/tech-policy/2026/04/ibm-folds-to-trump-anti-dei-push-admits-no-misconduct-but-pays-17m-penalty/",
+            "source": "Ars Technica",
+            "published": "2026-04-13"
+          }
+        ]
+      },
+      {
+        "name": "サイエンス",
+        "items": [
+          {
+            "title": "NASA to Host Artemis II Crew Postflight News Conference - NASA (.gov)",
+            "url": "https://www.nasa.gov/news-release/nasa-to-host-artemis-ii-crew-postflight-news-conference/",
+            "source": "NASA",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "‘Thrilling’ embryo fossil discovery upends everything we knew about how early mammals gave birth: ‘Breaks entirely new ground’ - New York Post",
+            "url": "https://nypost.com/2026/04/13/science/egg-fossil-proves-mammals-laid-eggs-250-million-years-ago/",
+            "source": "New York Post",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "Top GOP lawmaker pushes back on NASA’s budget cuts - Politico",
+            "url": "https://www.politico.com/news/2026/04/13/top-appropriator-pushes-back-on-nasas-budget-cuts-00869123",
+            "source": "Politico",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "How Artemis 2 commander Reid Wiseman saved the mission's moon mascot: 'It's hard not to love this little guy. I can't let Rise out of my sight' - Space",
+            "url": "https://www.space.com/space-exploration/artemis/how-artemis-2-commander-reid-wiseman-saved-the-missions-moon-mascot-its-hard-not-to-love-this-little-guy-i-cant-let-rise-out-of-my-sight",
+            "source": "Space.com",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "NASA Sets the Record Straight on That ‘Missing Chunk’ of Artemis 2’s Heat Shield - Gizmodo",
+            "url": "https://gizmodo.com/nasa-administrator-sets-the-record-straight-on-that-missing-chunk-of-artemis-2s-heat-shield-2000745676",
+            "source": "Gizmodo.com",
+            "published": "2026-04-13"
+          }
+        ]
+      },
+      {
+        "name": "エンタメ",
+        "items": [
+          {
+            "title": "Coachella 2026: The 15 Best Moments From Weekend One - Rolling Stone",
+            "url": "http://www.rollingstone.com/music/music-features/coachella-2026-best-moments-performances-weekend-one-1235545575/",
+            "source": "Rolling Stone",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "’99 Nights in the Forest’ Movie in the Works at 20th Century Studios - Variety",
+            "url": "https://variety.com/2026/film/news/99-nights-in-the-forest-movie-20th-century-studios-1236720515/",
+            "source": "Variety",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "Justin Bieber’s Coachella Set Had Nothing to Do With Catalog Sale - Billboard",
+            "url": "http://www.billboard.com/pro/justin-bieber-coachella-set-catalog-sale-misguided/",
+            "source": "Billboard",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "Lena Dunham reflects on Adam Driver's alleged violent behavior on 'Girls' set: 'That's what great male geniuses do’ - Entertainment Weekly",
+            "url": "https://ew.com/lena-dunham-adam-driver-alleged-violent-behavior-on-girls-set-11948411",
+            "source": "Entertainment Weekly",
+            "published": "2026-04-13"
+          }
+        ]
+      },
+      {
+        "name": "総合",
+        "items": [
+          {
+            "title": "Trump vows to sink Iranian ships approaching a U.S. blockade of Strait of Hormuz - NPR",
+            "url": "https://www.npr.org/2026/04/13/nx-s1-5783445/iran-war-updates",
+            "source": "NPR",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "DHS orders thousands of furloughed employees back to work despite ongoing shutdown - CBS News",
+            "url": "https://www.cbsnews.com/news/dhs-shutdown-furloughed-employees/",
+            "source": "CBS News",
+            "published": "2026-04-13"
+          },
+          {
+            "title": "Coachella 2026: The 15 Best Moments From Weekend One - Rolling Stone",
+            "url": "http://www.rollingstone.com/music/music-features/coachella-2026-best-moments-performances-weekend-one-1235545575/",
+            "source": "Rolling Stone",
+            "published": "2026-04-13"
+          }
+        ]
+      }
+    ]
+  },
+  "rakuten": {
+    "source": "楽天ランキング",
+    "items": []
+  },
+  "hackernews": {
+    "source": "Hacker News",
+    "region": "グローバル（テック業界）",
+    "items": [
+      {
+        "title": "Claudeコードルーチン",
+        "url": "https://code.claude.com/docs/en/routines",
+        "score": 232,
+        "comments": 145
+      },
+      {
+        "title": "珍しいコンサート録音がインターネットアーカイブに登場",
+        "url": "https://techcrunch.com/2026/04/13/thousands-of-rare-concert-recordings-are-landing-on-the-internet-archive-listen-now/",
+        "score": 410,
+        "comments": 122
+      },
+      {
+        "title": "YouTubeがディズニーを抜き、世界最大のメディア企業に",
+        "url": "https://www.hollywoodreporter.com/business/digital/youtube-worlds-largest-media-company-2025-tops-disney-1236525130/",
+        "score": 190,
+        "comments": 150
+      },
+      {
+        "title": "次世代のサイバー防衛のための信頼できるアクセス",
+        "url": "https://openai.com/index/scaling-trusted-access-for-cyber-defense/",
+        "score": 11,
+        "comments": 2
+      },
+      {
+        "title": "スペイン、インターネットブロックをテニス、ゴルフ、映画の放送時間にも拡大へ",
+        "url": "https://bandaancha.eu/articulos/telefonica-consigue-bloqueos-ips-11731",
+        "score": 368,
+        "comments": 338
+      },
+      {
+        "title": "Orange Pi 6 Plus",
+        "url": "https://taoofmac.com/space/reviews/2026/04/11/1900",
+        "score": 38,
+        "comments": 10
+      },
+      {
+        "title": "5NFとデータベース設計",
+        "url": "https://kb.databasedesignbook.com/posts/5nf/",
+        "score": 96,
+        "comments": 42
+      },
+      {
+        "title": "Flockのプライバシー担当者に、彼らの国内スパイプログラムからオプトアウトするために手紙を書いた",
+        "url": "https://honeypot.net/2026/04/14/i-wrote-to-flocks-privacy.html",
+        "score": 384,
+        "comments": 162
+      },
+      {
+        "title": "最高のAIプロンプトをChromeのワンクリックツールに変える",
+        "url": "https://blog.google/products-and-platforms/products/chrome/skills-in-chrome/",
+        "score": 48,
+        "comments": 25
+      },
+      {
+        "title": "宇宙トイレについて話そう",
+        "url": "https://mceglowski.substack.com/p/lets-talk-space-toilets",
+        "score": 85,
+        "comments": 27
+      },
+      {
+        "title": "guide.world: 旅行ガイドの概要",
+        "url": "https://guide.world/",
+        "score": 36,
+        "comments": 5
+      },
+      {
+        "title": "OpenSSL 4.0.0",
+        "url": "https://github.com/openssl/openssl/releases/tag/openssl-4.0.0",
+        "score": 124,
+        "comments": 33
+      },
+      {
+        "title": "Show HN: Plain – 人間とエージェントのために設計されたフルスタックPythonフレームワーク",
+        "url": "https://github.com/dropseed/plain",
+        "score": 30,
+        "comments": 11
+      },
+      {
+        "title": "カリフォルニア州のゴーストガン法案は3Dプリンターに警察の役割を求めている、とEFFが指摘",
+        "url": "https://www.theregister.com/2026/04/14/eff_california_3dprinted_firearms/",
+        "score": 115,
+        "comments": 96
+      },
+      {
+        "title": "Show HN: LangAlpha – Claude Codeがウォール街のために作られたらどうなるか？",
+        "url": "https://github.com/ginlix-ai/langalpha",
+        "score": 73,
+        "comments": 26
+      }
+    ]
+  },
+  "reddit": [
+    {
+      "source": "Reddit r/technology",
+      "category": "テクノロジー",
+      "region": "グローバル",
+      "items": [
+        {
+          "title": "23の主要ニュースサイトがWayback Machineをブロック – デジタル歴史が危機に",
+          "url": "https://reddit.com/r/technology/comments/1slg08d/23_major_news_sites_have_blocked_the_wayback/",
+          "score": 10672,
+          "comments": 270
+        },
+        {
+          "title": "ミズーリ州の町議会がデータセンターを承認。1週間後、有権者が議会の半数を解雇",
+          "url": "https://reddit.com/r/technology/comments/1slhoj2/missouri_town_council_approves_data_center_a_week/",
+          "score": 2254,
+          "comments": 138
+        },
+        {
+          "title": "サム・アルトマンの家への放火攻撃で起訴された男はAI CEOの殺害リストを持っていた、と検察が発表",
+          "url": "https://reddit.com/r/technology/comments/1sl7sep/man_charged_in_arson_attack_on_sam_altmans_house/",
+          "score": 7384,
+          "comments": 804
+        },
+        {
+          "title": "ディズニーで1,000人の従業員解雇が進行中。CEOジョシュ・ダマロは削減が業務を「合理化」すると語る：「これは辛いことだと分かっている」",
+          "url": "https://reddit.com/r/technology/comments/1slbh4h/disney_layoffs_of_1000_employees_are_underway_ceo/",
+          "score": 3504,
+          "comments": 546
+        },
+        {
+          "title": "Googleは6月から戻るボタンのハイジャックを行うサイトを罰し始める",
+          "url": "https://reddit.com/r/technology/comments/1slcy99/google_will_begin_punishing_sites_for_back_button/",
+          "score": 2438,
+          "comments": 148
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/worldnews",
+      "category": "世界ニュース",
+      "region": "グローバル",
+      "items": [
+        {
+          "title": "パキスタンの病院での注射器再利用により、331人の子供がHIVに感染",
+          "url": "https://reddit.com/r/worldnews/comments/1sl9lyv/syringe_reuse_at_pakistan_hospital_infects_331/",
+          "score": 27458,
+          "comments": 2736
+        },
+        {
+          "title": "習近平、戦争が犠牲を払う中、世界秩序が「混乱に陥っている」と発言",
+          "url": "https://reddit.com/r/worldnews/comments/1sl713a/xi_says_world_order_crumbling_into_disarray_as/",
+          "score": 15328,
+          "comments": 1790
+        },
+        {
+          "title": "スペイン、約50万人の不法移民に法的地位を与える計画を承認",
+          "url": "https://reddit.com/r/worldnews/comments/1slb1cw/spain_approves_plan_to_give_around_500000/",
+          "score": 3809,
+          "comments": 1220
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/japan",
+      "category": "日本",
+      "region": "日本",
+      "items": [
+        {
+          "title": "日本郵便、米国宛ての全荷物の受け入れを再開へ",
+          "url": "https://reddit.com/r/japan/comments/1sl9sz0/japan_post_to_resume_accepting_all_usbound/",
+          "score": 118,
+          "comments": 5
+        },
+        {
+          "title": "イラン戦争がサプライチェーンを混乱させ、TOTOが浴室の受注を停止",
+          "url": "https://reddit.com/r/japan/comments/1skufmo/toto_halts_bathroom_orders_after_iran_war_upends/",
+          "score": 245,
+          "comments": 25
+        },
+        {
+          "title": "新幹線の秘密；なぜ日本の鉄道会社は病院、野球チーム、老人ホームを所有しているのか",
+          "url": "https://reddit.com/r/japan/comments/1sl1qem/the_secrets_of_the_shinkansen_why_japanese_train/",
+          "score": 67,
+          "comments": 0
+        },
+        {
+          "title": "JR東日本とJR西日本が「多機能鉄道重機」として知られる人型ロボットを共同導入。JR西日本ではすでに採用されているが、JR東日本もこれに続く。さらに、JR四国とJR九州もプロジェクトに参加する予定。",
+          "url": "https://reddit.com/r/japan/comments/1sl5lux/jr_east_and_jr_west_will_jointly_introduce_a/",
+          "score": 15,
+          "comments": 3
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/korea",
+      "category": "韓国",
+      "region": "韓国",
+      "items": [
+        {
+          "title": "近所の桜が満開。",
+          "url": "https://reddit.com/r/korea/comments/1sl7vo5/the_cherry_blossoms_in_full_bloom_in_my/",
+          "score": 139,
+          "comments": 8
+        },
+        {
+          "title": "トランプ氏、元下院議員ミシェル・パーク・スティール氏を駐韓米国大使に指名",
+          "url": "https://reddit.com/r/korea/comments/1skyhfc/trump_nominates_former_rep_michelle_park_steel_as/",
+          "score": 162,
+          "comments": 58
+        },
+        {
+          "title": "ソウル、ホルムズ海峡の航行確保のため、韓国関連船舶の詳細をテヘランに送付",
+          "url": "https://reddit.com/r/korea/comments/1slkngz/seoul_sends_korearelated_ship_details_to_tehran/",
+          "score": 7,
+          "comments": 2
+        },
+        {
+          "title": "「兵役忌避法案の停滞」により、38歳から43歳に引き上げ",
+          "url": "https://reddit.com/r/korea/comments/1sl12ac/stalling_draft_evasion_bill_raises_38yo_to_43yo/",
+          "score": 59,
+          "comments": 20
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/china",
+      "category": "中国",
+      "region": "中国",
+      "items": [
+        {
+          "title": "中国恒大の億万長者創業者、詐欺罪を認める",
+          "url": "https://reddit.com/r/China/comments/1skyp7e/china_evergrandes_billionaire_founder_pleads/",
+          "score": 146,
+          "comments": 39
+        },
+        {
+          "title": "親切に国境なし：モロッコ人学生が溺れる中国人女性を救助",
+          "url": "https://reddit.com/r/China/comments/1slhd3y/kindness_knows_no_borders_moroccan_student_saves/",
+          "score": 10,
+          "comments": 2
+        },
+        {
+          "title": "米国制裁対象のタンカー、米国の封鎖にもかかわらずホルムズ海峡を通過、データが示す",
+          "url": "https://reddit.com/r/China/comments/1skz857/ussanctioned_tankers_pass_strait_of_hormuz/",
+          "score": 79,
+          "comments": 14
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/europe",
+      "category": "ヨーロッパ",
+      "region": "欧州",
+      "items": [
+        {
+          "title": "トランプ氏、「容認できない」メローニ氏に反旗を翻す",
+          "url": "https://reddit.com/r/europe/comments/1sledab/trᴜmp_turns_against_unacceptable_melоni/",
+          "score": 2588,
+          "comments": 371
+        },
+        {
+          "title": "ハンガリーの新指導者、ヴィクトル・オルバンがCPACに資金提供していたことを明かす",
+          "url": "https://reddit.com/r/europe/comments/1slfjtc/hungarys_new_leader_reveals_victor_orbán_was/",
+          "score": 1802,
+          "comments": 75
+        },
+        {
+          "title": "Christo Komarnitski, 4-14-26",
+          "url": "https://reddit.com/r/europe/comments/1sl2kpx/christo_komarnitski_41426/",
+          "score": 6547,
+          "comments": 118
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/india",
+      "category": "インド",
+      "region": "インド",
+      "items": [
+        {
+          "title": "南デリーで公衆飲酒に異議を唱えた准将と息子が暴行される。まだFIRなし、陸軍が行動を求める。",
+          "url": "https://reddit.com/r/india/comments/1sl8u9y/brigadier_son_assaulted_in_south_delhi_for/",
+          "score": 459,
+          "comments": 48
+        },
+        {
+          "title": "インドは中国のような超大国にはなれない | リー・クアンユー、2008年",
+          "url": "https://reddit.com/r/india/comments/1sl8ueg/india_cant_be_a_superpower_like_china_lee_kuan/",
+          "score": 373,
+          "comments": 101
+        },
+        {
+          "title": "TCSナーシク騒動が勃発：潜入捜査で性的虐待、強制、宗教的圧力が明らかに；企業はゼロトレランスを誓う",
+          "url": "https://reddit.com/r/india/comments/1skz2xb/tcs_nashik_row_explodes_how_undercover_police_op/",
+          "score": 1657,
+          "comments": 236
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/business",
+      "category": "ビジネス",
+      "region": "グローバル",
+      "items": [
+        {
+          "title": "広告主、エスカレートする独占争いでGoogleに数十億ドルの賠償を要求",
+          "url": "https://reddit.com/r/business/comments/1sli18x/advertisers_demand_billions_of_dollars_from/",
+          "score": 69,
+          "comments": 1
+        },
+        {
+          "title": "Amazon、約116億ドルでGlobalstarを買収し、Leo衛星事業を強化へ",
+          "url": "https://reddit.com/r/business/comments/1slgngm/amazon_to_buy_globalstar_to_bolster_leo_satellite/",
+          "score": 11,
+          "comments": 0
+        },
+        {
+          "title": "知らなかった：本田宗一郎はトヨタのエンジニア職に不採用となり、その後ホンダを設立した。ホンダの車は現在、何百万人ものアメリカ人に運転されている。",
+          "url": "https://reddit.com/r/business/comments/1sli3e6/til_that_soichiro_honda_was_rejected_by_toyota/",
+          "score": 8,
+          "comments": 1
+        },
+        {
+          "title": "Oracle、4億ドルの新株予約権を受け取った数日後にBloom Energyとの契約を拡大",
+          "url": "https://reddit.com/r/business/comments/1sky1yp/oracle_expands_bloom_energy_deal_days_after/",
+          "score": 57,
+          "comments": 1
+        },
+        {
+          "title": "Amazonはジェフ・ベゾスに年間8万ドルの給与を支払い続けているが、旅費と警備費には160万ドルを支払っている",
+          "url": "https://reddit.com/r/business/comments/1sk4k27/amazon_is_still_paying_jeff_bezos_an_80000_yearly/",
+          "score": 2017,
+          "comments": 226
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/artificial",
+      "category": "AI",
+      "region": "グローバル",
+      "items": [
+        {
+          "title": "Claude Codeの劣化：興味深く斬新な発見",
+          "url": "https://reddit.com/r/artificial/comments/1slhln5/claude_code_degradation_an_interesting_and_novel/",
+          "score": 6,
+          "comments": 3
+        },
+        {
+          "title": "なぜLLMは会話で時間を追跡しないのか？",
+          "url": "https://reddit.com/r/artificial/comments/1sky7h9/why_dont_llms_track_time_in_their_conversations/",
+          "score": 66,
+          "comments": 64
+        },
+        {
+          "title": "新しいAIツールが遺伝性疾患の診断方法を変革する可能性",
+          "url": "https://reddit.com/r/artificial/comments/1sljo6z/a_new_ai_tool_could_transform_how_we_diagnose/",
+          "score": 3,
+          "comments": 0
+        },
+        {
+          "title": "ClaudeはChatGPTと同じ道をたどっている。私が測定した。",
+          "url": "https://reddit.com/r/artificial/comments/1skoj7d/claude_is_on_the_same_path_as_chatgpt_i_measured/",
+          "score": 161,
+          "comments": 92
+        },
+        {
+          "title": "IRSはよりスマートな監査を求めている。パランティアは誰がフラグを立てられるかを決定するのに役立つ可能性がある",
+          "url": "https://reddit.com/r/artificial/comments/1slhx3l/the_irs_wants_smarter_audits_palantir_could_help/",
+          "score": 3,
+          "comments": 1
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/startups",
+      "category": "スタートアップ",
+      "region": "グローバル",
+      "items": [
+        {
+          "title": "私のスクリーニングコールは実際うまくいったのか？待つのが辛い。(宣伝しません)",
+          "url": "https://reddit.com/r/startups/comments/1sl863y/did_my_screening_call_actually_go_well_the_wait/",
+          "score": 4,
+          "comments": 4
+        },
+        {
+          "title": "株式だけで報酬をもらっているが、辞めるべきか？(宣伝しません)",
+          "url": "https://reddit.com/r/startups/comments/1slbxy2/only_been_paid_in_equity_should_i_quit_i_will_not/",
+          "score": 3,
+          "comments": 35
+        },
+        {
+          "title": "VCに連絡するのは早すぎるか？考えすぎているのか？(宣伝しません)",
+          "url": "https://reddit.com/r/startups/comments/1sll6yb/how_soon_is_too_soon_to_reach_out_to_vcs_am_i/",
+          "score": 1,
+          "comments": 2
+        }
+      ]
+    }
+  ],
+  "github": {
+    "source": "GitHub Trending",
+    "region": "グローバル（開発者）",
+    "items": [
+      {
+        "title": "ultraworkers/claw-code - リポジトリがついにアンロックされた。パーティーを楽しんで！史上最速のリポジトリ",
+        "url": "https://github.com/ultraworkers/claw-code",
+        "stars": 184145,
+        "language": "Rust"
+      },
+      {
+        "title": "VoltAgent/awesome-design-md - 人気ブランドのデザインシステムにインスパイアされたDESIGN.mdファイルのコレクション。",
+        "url": "https://github.com/VoltAgent/awesome-design-md",
+        "stars": 50533,
+        "language": null
+      },
+      {
+        "title": "MemPalace/mempalace - これまでにベンチマークされた中で最高得点のAI記憶システム。しかも無料。",
+        "url": "https://github.com/MemPalace/mempalace",
+        "stars": 45786,
+        "language": "Python"
+      },
+      {
+        "title": "santifer/career-ops - Claude Code上に構築されたAI搭載の求職システム。14のスキルモード、Goダッシュボード。",
+        "url": "https://github.com/santifer/career-ops",
+        "stars": 33196,
+        "language": "JavaScript"
+      },
+      {
+        "title": "JuliusBrussee/caveman - 🪨 少ないトークンで済むのに、なぜ多くのトークンを使うのか — Claude Codeスキルで65%削減",
+        "url": "https://github.com/JuliusBrussee/caveman",
+        "stars": 29457,
+        "language": "Python"
+      },
+      {
+        "title": "safishamsi/graphify - AIコーディングアシスタントスキル (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, Git",
+        "url": "https://github.com/safishamsi/graphify",
+        "stars": 26284,
+        "language": "Python"
+      },
+      {
+        "title": "Gitlawb/openclaude - Open ClaudeはOpenAI, Gemini, DeepSeek, Ollama向けのオープンソースコーディングエージェントCLI",
+        "url": "https://github.com/Gitlawb/openclaude",
+        "stars": 21501,
+        "language": "TypeScript"
+      },
+      {
+        "title": "claude-code-best/claude-code - オリジナルそのままのClaude Code、実行・構築・デバッグ可能版；TypeScriptの型を完全に修正；エンタープライズ級の信頼性；安全無毒、ロックファイルの整合性を保証、直接b可能",
+        "url": "https://github.com/claude-code-best/claude-code",
+        "stars": 15802,
+        "language": "TypeScript"
+      },
+      {
+        "title": "openai/codex-plugin-cc - Claude CodeからCodexを使用してコードをレビューしたり、タスクを委任したりする。",
+        "url": "https://github.com/openai/codex-plugin-cc",
+        "stars": 14295,
+        "language": "JavaScript"
+      },
+      {
+        "title": "titanwings/colleague-skill - 冷たい別れを温かいスキルに変える、デジタル生命1.0へようこそ！冷たい別れを温かいスキルに変える？それは",
+        "url": "https://github.com/titanwings/colleague-skill",
+        "stars": 14112,
+        "language": "Python"
+      }
+    ]
+  },
+  "ai_analysis": {
+    "source": "グローバルトレンド分析（AI）",
+    "region": "全世界",
+    "items": [],
+    "error": "Unterminated string starting at: line 111 column 9 (char 3378)"
+  },
+  "article_ideas": {
+    "affiliate_ideas": [
+      {
+        "title": "【2026年最新】GPT-5.4、Gemini 3.1 Pro、Claude Opus 4.6徹底比較！AIモデルの選び方と活用法",
+        "keyword": "AIモデル 比較, GPT-5.4, Gemini 3.1 Pro, Claude Opus 4.6",
+        "why_now": "AIモデル競争が激化し、GPT-5.4、Gemini 3.1 Pro、Claude Opus 4.6といった主要モデルが性能競争を繰り広げています。Model Context Protocol (MCP)によるエコシステムの標準化も進んでおり、ユーザーはどのモデルを選ぶべきか迷っています。最新情報を網羅した比較記事は、今最も需要が高いテーマの一つです。",
+        "competition": "中",
+        "revenue_potential": "高",
+        "best_platform": "自社サイト",
+        "platform_reason": "AIツール比較を専門とする自社サイトのコアコンテンツとして、SEOで上位表示を狙うべきです。詳細な比較と専門的な分析で信頼性を高め、長期的な集客に繋げます。",
+        "priority": "S"
+      },
+      {
+        "title": "【AIエージェント開発】AI-Native開発プラットフォーム徹底解説！コンテキスト駆動型アーキテクチャで差別化",
+        "keyword": "AIエージェント 開発, AI-Nativeプラットフォーム, コンテキスト駆動型アーキテクチャ",
+        "why_now": "AIエージェントが関連データやツールに安全にアクセスし、差別化された製品やサービスを可能にするAI-Native開発プラットフォームとコンテキスト駆動型アーキテクチャがグローバルで注目されています。この分野はまだ競合が少なく、専門的な解説記事は検索上位を狙いやすいです。",
+        "competition": "低",
+        "revenue_potential": "中",
+        "best_platform": "自社サイト",
+        "platform_reason": "専門性の高いテーマであるため、自社サイトで詳細な解説記事を公開し、AI開発に関心のある層からのアクセスを獲得します。将来的には関連するAI開発ツールのアフィリエイトにも繋げられます。",
+        "priority": "A"
+      },
+      {
+        "title": "【時短家電2026】共働き・Z世代必見！タイパ重視の小型食洗機・ロボット掃除機おすすめ10選",
+        "keyword": "時短家電, 小型食洗機, ロボット掃除機, タイパ",
+        "why_now": "日本のEC市場では共働き世帯やZ世代の影響で「タイパ（タイムパフォーマンス）」重視の傾向が強く、時間を節約できる小型食洗機、ロボット掃除機、多機能電気圧力鍋などが人気です。最新のトレンドを反映したおすすめ記事は、高い需要が見込めます。",
+        "competition": "中",
+        "revenue_potential": "高",
+        "best_platform": "自社サイト",
+        "platform_reason": "幅広い層にアプローチできるテーマであり、自社サイトで詳細な比較レビューを行うことで、家電量販店やECサイトへの送客を狙います。Amazonアソシエイトや楽天アフィリエイトなど、ASPの選択肢も豊富です。",
+        "priority": "A"
+      },
+      {
+        "title": "【Chrome拡張機能】最高のAIプロンプトをワンクリックで！おすすめツールと活用術",
+        "keyword": "AIプロンプト Chrome拡張機能, AIツール",
+        "why_now": "Hacker Newsで「最高のAIプロンプトをChromeのワンクリックツールに変える」という話題がスコア48を獲得しており、AIプロンプトの効率化への関心が高まっています。具体的なツール紹介と活用術は、AIツールに関心のあるユーザーに刺さりやすいテーマです。",
+        "competition": "低",
+        "revenue_potential": "中",
+        "best_platform": "自社サイト / note",
+        "platform_reason": "自社サイトで詳細なレビュー記事を公開し、関連するAIツールの紹介に繋げます。また、noteで有料コンテンツとして、より実践的なプロンプト集や活用事例を販売することも可能です。",
+        "priority": "B"
+      }
+    ],
+    "ec_opportunities": [
+      {
+        "product": "嗅覚没入型アロマエンターテイメントシステム（The Scentbar類似品）",
+        "trending_in": "日本, グローバル（ゲーム業界）",
+        "japan_status": "認知度低い/これから来る",
+        "buy_price_range": "5,000円〜20,000円",
+        "sell_price_range": "15,000円〜50,000円",
+        "source": "AliExpress, Alibaba, Kickstarter (海外クラウドファンディング)",
+        "sell_on": "Amazon.co.jp, 楽天, 自社ECサイト",
+        "risk": "品質保証, 香料の安全性, 日本での法規制（薬機法など）",
+        "priority": "S"
+      },
+      {
+        "product": "レトロデザインのワイヤレスゲームコントローラー（最新技術搭載）",
+        "trending_in": "日本, グローバル（ゲーム業界、ソーシャルメディアのノスタルジーコンテンツ）",
+        "japan_status": "認知度低い/これから来る",
+        "buy_price_range": "2,000円〜8,000円",
+        "sell_price_range": "5,000円〜20,000円",
+        "source": "AliExpress, Amazon.com, Taobao",
+        "sell_on": "Amazon.co.jp, メルカリ, 楽天",
+        "risk": "品質、技適マーク取得の必要性",
+        "priority": "A"
+      },
+      {
+        "product": "AI生成アートプリント/デザイングッズ（Tシャツ、スマホケースなど）",
+        "trending_in": "グローバル（ソーシャルメディアにおけるAI駆動型コンテンツ作成）",
+        "japan_status": "認知度低い/これから来る",
+        "buy_price_range": "500円〜3,000円",
+        "sell_price_range": "1,500円〜8,000円",
+        "source": "Printful (ドロップシッピング), Etsy (海外クリエイター), Alibaba",
+        "sell_on": "メルカリ, BASE, minne",
+        "risk": "著作権問題（AI生成アートの権利）、デザインのトレンド変化",
+        "priority": "B"
+      },
+      {
+        "product": "海外発の多機能小型電気圧力鍋（日本未上陸ブランド）",
+        "trending_in": "日本（タイパ重視のEC）",
+        "japan_status": "未上陸/認知度低い",
+        "buy_price_range": "8,000円〜25,000円",
+        "sell_price_range": "20,000円〜60,000円",
+        "source": "Amazon.com, Alibaba, Taobao",
+        "sell_on": "Amazon.co.jp, 楽天, 自社ECサイト",
+        "risk": "PSEマーク取得の必要性、アフターサービス、競合の参入",
+        "priority": "A"
+      }
+    ],
+    "business_ideas": [
+      {
+        "idea": "AIエージェント向けセキュアデータ連携SaaS",
+        "trend_basis": "AI-Native開発プラットフォームとコンテキスト駆動型アーキテクチャ: AIエージェントが関連データやツールに安全にアクセスするニーズ。",
+        "target_market": "AI開発企業、AIエージェントを活用したい企業",
+        "revenue_model": "月額サブスクリプション（API利用料に応じた従量課金も含む）",
+        "priority": "S"
+      },
+      {
+        "idea": "AI活用ライブコマース向け商品レコメンドシステム",
+        "trend_basis": "ECライブ販売市場の急成長: 2026年には1兆2000億円を超える市場規模。AIによるパーソナライズされたレコメンドで売上向上に貢献。",
+        "target_market": "ライブコマース事業者、ECサイト運営者",
+        "revenue_model": "成果報酬型（売上向上に応じた手数料）、月額利用料",
+        "priority": "A"
+      },
+      {
+        "idea": "AIによるパーソナライズされたノスタルジーコンテンツ生成サービス",
+        "trend_basis": "ソーシャルメディアにおけるノスタルジーコンテンツの流行: TikTokで過去の文化や共有体験を呼び起こすコンテンツが人気。",
+        "target_market": "個人クリエイター、マーケター、インフルエンサー",
+        "revenue_model": "月額サブスクリプション、コンテンツ生成ごとの従量課金",
+        "priority": "B"
+      },
+      {
+        "idea": "複数のAIモデル統合APIゲートウェイサービス",
+        "trend_basis": "AIモデル競争とエコシステムの標準化: GPT-5.4、Gemini 3.1 Pro、Claude Opus 4.6など複数のAIモデルが存在し、Model Context Protocol (MCP)が業界標準に。",
+        "target_market": "AI開発者、企業（複数のAIモデルを使い分けたいニーズ）",
+        "revenue_model": "API利用料（従量課金）、月額サブスクリプション",
+        "priority": "A"
+      },
+      {
+        "idea": "タイパ特化型ECプラットフォーム（時短家電・時短食材サブスク）",
+        "trend_basis": "日本のECにおける「タイパ（タイムパフォーマンス）」重視: 共働き世帯やZ世代の影響で、時間を節約できる商品が人気。",
+        "target_market": "共働き世帯、Z世代、時間効率を重視する消費者",
+        "revenue_model": "商品販売手数料、サブスクリプション料金",
+        "priority": "A"
+      }
+    ]
+  }
+}

@@ -1,0 +1,988 @@
+{
+  "gemini_search": {
+    "source": "Gemini検索",
+    "region": "グローバル",
+    "items": [],
+    "error": "The read operation timed out"
+  },
+  "youtube": {
+    "source": "YouTube急上昇",
+    "data": {
+      "youtube_trending": [
+        {
+          "country": "グローバル（全世界）",
+          "videos": [
+            {
+              "title": "Digital Circus Ep 9 Finale [TRAILER]",
+              "channel": "GLITCH",
+              "category": "エンタメ",
+              "views_approx": "20.6M"
+            },
+            {
+              "title": "GODZILLA MINUS ZERO | First Look Teaser",
+              "channel": "TOHO (推定)",
+              "category": "エンタメ",
+              "views_approx": "1.6M+"
+            },
+            {
+              "title": "“PINKY UP” MV (Choreography Ver.)",
+              "channel": "KATSEYE",
+              "category": "音楽",
+              "views_approx": "1.9M+"
+            },
+            {
+              "title": "KEEP BRAWL ALIVE!",
+              "channel": "Brawl Stars (推定)",
+              "category": "ゲーム",
+              "views_approx": "8.9M+"
+            },
+            {
+              "title": "Laufey - Madwoman (Official Music Video)",
+              "channel": "Laufey",
+              "category": "音楽",
+              "views_approx": "4.9M+"
+            }
+          ]
+        },
+        {
+          "country": "アメリカ",
+          "videos": [
+            {
+              "title": "\"PINKY UP\" MV (Choreography Ver.)",
+              "channel": "KATSEYE",
+              "category": "音楽",
+              "views_approx": "不明"
+            },
+            {
+              "title": "GODZILLA MINUS ZERO | First Look Teaser",
+              "channel": "TOHO (推定)",
+              "category": "エンタメ",
+              "views_approx": "不明"
+            },
+            {
+              "title": "Laufey - Madwoman (Official Music Video)",
+              "channel": "Laufey",
+              "category": "音楽",
+              "views_approx": "不明"
+            },
+            {
+              "title": "Black Cat: The Master Thief| Character Reveal Trailer | Marvel Rivals",
+              "channel": "Marvel Rivals (推定)",
+              "category": "ゲーム/エンタメ",
+              "views_approx": "不明"
+            },
+            {
+              "title": "The Five",
+              "channel": "Fox News (推定)",
+              "category": "ニュース",
+              "views_approx": "不明"
+            }
+          ]
+        },
+        {
+          "country": "日本",
+          "videos": [
+            {
+              "title": "【歌ってみた】AIZO / covered by ChroNoiR",
+              "channel": "ChroNoiR",
+              "category": "音楽",
+              "views_approx": "不明"
+            },
+            {
+              "title": "GODZILLA MINUS ZERO | First Look Teaser",
+              "channel": "TOHO (推定)",
+              "category": "エンタメ",
+              "views_approx": "不明"
+            },
+            {
+              "title": "大流行の『ボンドカシール』がある世界でサバイバル！【 マイクラ 】",
+              "channel": "不明",
+              "category": "ゲーム",
+              "views_approx": "不明"
+            },
+            {
+              "title": "B'z / Heaven Knows",
+              "channel": "B'z",
+              "category": "音楽",
+              "views_approx": "不明"
+            },
+            {
+              "title": "【ついにラスト】アメイジングデジタルサーカス9の予告映像を解説します！【THE AMAZING DIGITAL CIRCUS episode 9】",
+              "channel": "不明",
+              "category": "エンタメ",
+              "views_approx": "不明"
+            }
+          ]
+        },
+        {
+          "country": "韓国",
+          "videos": [
+            {
+              "title": "AKMU - 소문의 낙원",
+              "channel": "AKMU",
+              "category": "音楽",
+              "views_approx": "1,361,615"
+            },
+            {
+              "title": "AKMU - 기쁨, 슬픔, 아름다운 마음",
+              "channel": "AKMU",
+              "category": "音楽",
+              "views_approx": "1,048,403"
+            },
+            {
+              "title": "Hearts2Hearts - RUDE!",
+              "channel": "Hearts2Hearts",
+              "category": "音楽",
+              "views_approx": "945,856"
+            },
+            {
+              "title": "WOODZ - Drowning",
+              "channel": "WOODZ",
+              "category": "音楽",
+              "views_approx": "718,402"
+            },
+            {
+              "title": "YENA - 캐치 캐치",
+              "channel": "YENA",
+              "category": "音楽",
+              "views_approx": "699,306"
+            }
+          ]
+        },
+        {
+          "country": "インド",
+          "videos": [
+            {
+              "title": "Ada Bommale - Video Song | Vaazha 2",
+              "channel": "Think Music India",
+              "category": "音楽",
+              "views_approx": "1.9M"
+            },
+            {
+              "title": "Bhooth Bangla -Official Trailer| Akshay Kumar, Tabu, Paresh, Wamiqa, Priyadarshan",
+              "channel": "Balaji Motion Pictures",
+              "category": "エンタメ",
+              "views_approx": "27.9M+"
+            },
+            {
+              "title": "Jab Talak (First Look) Shahid, Kriti, Rashmika",
+              "channel": "Universal Music India",
+              "category": "音楽/エンタメ",
+              "views_approx": "4.469M+"
+            },
+            {
+              "title": "Spying on Villager and We Found this.",
+              "channel": "不明",
+              "category": "ゲーム/その他",
+              "views_approx": "不明"
+            },
+            {
+              "title": "Live Free Fire New Rank Season Rank Push Live !!",
+              "channel": "不明",
+              "category": "ゲーム",
+              "views_approx": "不明"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "google_trends": {
+    "source": "Google Trends",
+    "regions": {
+      "日本": [],
+      "アメリカ": [],
+      "韓国": [],
+      "インド": [],
+      "ドイツ": []
+    }
+  },
+  "newsapi": {
+    "source": "NewsAPI",
+    "categories": [
+      {
+        "name": "テクノロジー",
+        "items": [
+          {
+            "title": "Overwatch launches on Nintendo Switch 2 with performance issues, Blizzard confirms patch in the works - Nintendo Everything",
+            "url": "https://nintendoeverything.com/overwatch-launches-on-nintendo-switch-2-with-performance-issues-blizzard-confirms-patch-in-the-works/",
+            "source": "Nintendoeverything.com",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "The Super Hero Team-based PVP Shooter - Marvel Rivals",
+            "url": "https://www.marvelrivals.com/balancepost/20260414/41667_1295988.html",
+            "source": "Marvelrivals.com",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "Hades II Bonus Content Arrives On Switch 1 & 2, Here Are The Full Patch Notes - Nintendo Life",
+            "url": "https://www.nintendolife.com/news/2026/04/hades-ii-bonus-content-arrives-on-switch-1-and-2-here-are-the-full-patch-notes",
+            "source": "Nintendo Life",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "TFT patch 17.1 - Teamfight Tactics",
+            "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-17-1/",
+            "source": "Leagueoflegends.com",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "Microsoft April 2026 Patch Tuesday fixes 167 flaws, 2 zero-days - BleepingComputer",
+            "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-april-2026-patch-tuesday-fixes-167-flaws-2-zero-days/",
+            "source": "BleepingComputer",
+            "published": "2026-04-14"
+          }
+        ]
+      },
+      {
+        "name": "ビジネス",
+        "items": [
+          {
+            "title": "Disney Layoffs Hit Marvel Studios Hard - Forbes",
+            "url": "https://www.forbes.com/sites/robsalkowitz/2026/04/14/disney-layoffs-hit-marvel-studios-hard/",
+            "source": "Forbes",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "Futures: Two Titans In Buy Areas As Rally Powers On; What To Do - Investor's Business Daily",
+            "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nasdaq-nvidia-win-streaks-asml-bank-of-america/",
+            "source": "Investor's Business Daily",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "S&P 500 marches higher one day after benchmark wipes out Iran war losses: Live updates - CNBC",
+            "url": "https://www.cnbc.com/2026/04/13/stock-markets-today-live-updates.html",
+            "source": "CNBC",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "Globalstar Stock Rises on Amazon Takeover. The Impact on AST SpaceMobile and Iridium. - Barron's",
+            "url": "https://www.barrons.com/articles/globalstar-stock-agrees-amazon-takeover-ast-iridium-22fc5f79",
+            "source": "Barron's",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "Ben & Jerry’s co-founder wants the company to be independent once more - AP News",
+            "url": "https://apnews.com/article/ben-jerrys-ice-cream-vermont-magnum-unilever-protest-36272db3e7683f37aefec623e0b699fa",
+            "source": "Associated Press",
+            "published": "2026-04-14"
+          }
+        ]
+      },
+      {
+        "name": "サイエンス",
+        "items": [
+          {
+            "title": "NASA shares photos of a rare and extraordinary event witnessed by astronauts on the space station - Earth.com",
+            "url": "https://www.earth.com/news/nasa-astronauts-capture-rare-lightning-storms-red-sprites-from-space-station-iss/",
+            "source": "Earth.com",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "Here’s What Scientists Found When They Cooked Up Their Own ‘Mercury Rocks’ - Gizmodo",
+            "url": "https://gizmodo.com/heres-what-scientists-found-when-they-cooked-up-their-own-mercury-rocks-2000746234",
+            "source": "Gizmodo.com",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "'God of chaos' asteroid to pass close to Earth in 2029 - abcnews.com",
+            "url": "https://abcnews.com/US/god-chaos-asteroid-pass-close-earth-2029/story?id\\\\u003d132027987",
+            "source": "Abcnews.com",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "Physicists think they’ve resolved the proton size puzzle - Ars Technica",
+            "url": "https://arstechnica.com/science/2026/04/physicists-think-theyve-resolved-the-proton-size-puzzle/",
+            "source": "Ars Technica",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "Copper blasted into a million-degree plasma strips away 22 electrons in a flash before atoms recover - Phys.org",
+            "url": "https://phys.org/news/2026-04-copper-blasted-million-degree-plasma.html",
+            "source": "Phys.Org",
+            "published": "2026-04-14"
+          }
+        ]
+      },
+      {
+        "name": "エンタメ",
+        "items": [
+          {
+            "title": "Nicolas Cage Returning for New ‘Longlegs’ Movie From Osgood Perkins - Variety",
+            "url": "https://variety.com/2026/film/news/nicolas-cage-longlegs-sequel-osgood-perkins-1236721703/",
+            "source": "Variety",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "Guy Fieri Responds to Backlash Over Meeting Tate Brothers at UFC Event - Variety",
+            "url": "https://variety.com/2026/tv/news/guy-fieri-backlash-tate-brothers-ufc-event-statement-1236721676/",
+            "source": "Variety",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "Lena Dunham Recalls Cheating on Jack Antonoff While He Got Close to a ‘Teen Pop Star,’ Explains Jenni Konner Fallout and More — Biggest ‘Famesick’ Revelations - Variety",
+            "url": "https://variety.com/2026/tv/news/lena-dunham-famesick-revelations-jack-antonoff-1236721370/",
+            "source": "Variety",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "New creepy Harvey Weinstein remark revealed by prosecutors moments before start of 3rd NYC sex crimes trial - New York Post",
+            "url": "https://nypost.com/2026/04/14/us-news/new-creepy-harvey-weinstein-remark-revealed-by-prosecutors-moments-before-start-of-3rd-nyc-sex-crimes-trial/",
+            "source": "New York Post",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "Taylor Sheridan’s ‘The Madison’ Renewed For Season 3 By Paramount+ Ahead Of Season 2 Debut - Deadline",
+            "url": "http://deadline.com/2026/04/taylor-sheridans-the-madison-renewed-season-3-paramount-1236860538/",
+            "source": "Deadline",
+            "published": "2026-04-14"
+          }
+        ]
+      },
+      {
+        "name": "総合",
+        "items": [
+          {
+            "title": "Live Updates: Iran war continues with U.S. blockade of ports; Lebanon and Israel hold direct talks - CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-peace-talks-us-blockade-irans-ports-day-2/",
+            "source": "CBS News",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "Live updates: Trump hints US-Iran talks could resume over next two days - CNN",
+            "url": "https://www.cnn.com/2026/04/14/world/live-news/iran-war-blockade-us-trump",
+            "source": "CNN",
+            "published": "2026-04-14"
+          },
+          {
+            "title": "S&P 500 marches higher one day after benchmark wipes out Iran war losses: Live updates - CNBC",
+            "url": "https://www.cnbc.com/2026/04/13/stock-markets-today-live-updates.html",
+            "source": "CNBC",
+            "published": "2026-04-14"
+          }
+        ]
+      }
+    ]
+  },
+  "rakuten": {
+    "source": "楽天ランキング",
+    "items": []
+  },
+  "hackernews": {
+    "source": "Hacker News",
+    "region": "グローバル（テック業界）",
+    "items": [
+      {
+        "title": "HNに聞く：OpenClawを使っているのは誰ですか？",
+        "url": "https://news.ycombinator.com/item?id=47783940",
+        "score": 128,
+        "comments": 163
+      },
+      {
+        "title": "サイバーセキュリティは今やプルーフ・オブ・ワークのようだ",
+        "url": "https://www.dbreunig.com/2026/04/14/cybersecurity-is-proof-of-work-now.html",
+        "score": 97,
+        "comments": 50
+      },
+      {
+        "title": "マクドナルド日本のバーガー写真のバンズはすべて少し斜めになっている",
+        "url": "https://www.mcdonalds.co.jp/en/menu/burger/",
+        "score": 84,
+        "comments": 29
+      },
+      {
+        "title": "Googleは私との約束を破った – 今やICEが私のデータを持っている",
+        "url": "https://www.eff.org/deeplinks/2026/04/google-broke-its-promise-me-now-ice-has-my-data",
+        "score": 882,
+        "comments": 379
+      },
+      {
+        "title": "PiCore - Tiny Core LinuxのRaspberry Pi移植版",
+        "url": "http://tinycorelinux.net/5.x/armv6/releases/README",
+        "score": 48,
+        "comments": 3
+      },
+      {
+        "title": "Cal.comはクローズドソースになる",
+        "url": "https://cal.com/blog/cal-com-goes-closed-source-why",
+        "score": 156,
+        "comments": 132
+      },
+      {
+        "title": "神は鉱物の中に眠る",
+        "url": "https://wchambliss.wordpress.com/2026/03/03/god-sleeps-in-the-minerals/",
+        "score": 414,
+        "comments": 88
+      },
+      {
+        "title": "ライブ・ネイションがチケット市場を不法に独占したと陪審が認定",
+        "url": "https://www.bloomberg.com/news/articles/2026-04-15/live-nation-illegally-monopolized-ticketing-market-jury-finds",
+        "score": 275,
+        "comments": 78
+      },
+      {
+        "title": "Gas Townは、自己改善のためにユーザーのLLMクレジットから利用量を「盗んでいる」のか？",
+        "url": "https://github.com/gastownhall/gastown/issues/3649",
+        "score": 160,
+        "comments": 77
+      },
+      {
+        "title": "静電気で画面が真っ暗になったり、消えたり、点滅したりするモニターの修理 (2023年)",
+        "url": "https://aalonso.dev/blog/2023/how-to-fix-monitor-that-goes-black-off-due-to-static-electricity-in-chair/",
+        "score": 101,
+        "comments": 53
+      },
+      {
+        "title": "ターミナルページャーを作った",
+        "url": "https://theleo.zone/posts/pager/",
+        "score": 3,
+        "comments": 0
+      },
+      {
+        "title": "Excel用ChatGPT",
+        "url": "https://chatgpt.com/apps/spreadsheets/",
+        "score": 12,
+        "comments": 3
+      },
+      {
+        "title": "コンパイラを書きたい？この2つの論文を読めばいい (2008年)",
+        "url": "https://prog21.dadgum.com/30.html",
+        "score": 436,
+        "comments": 131
+      },
+      {
+        "title": "イヌワシがイギリスの空に戻る",
+        "url": "https://www.bbc.co.uk/news/articles/cje4zlxqkqdo",
+        "score": 31,
+        "comments": 17
+      },
+      {
+        "title": "良い睡眠、良い学習、良い人生 (2012年)",
+        "url": "https://super-memory.com/articles/sleep.htm",
+        "score": 344,
+        "comments": 170
+      }
+    ]
+  },
+  "reddit": [
+    {
+      "source": "Reddit r/technology",
+      "category": "テクノロジー",
+      "region": "グローバル",
+      "items": [
+        {
+          "title": "チケットマスターは違法な独占企業であると陪審が裁定 / この評決は、ライブ・ネイションとチケットマスターの潜在的な解体に向けた第一歩である。",
+          "url": "https://reddit.com/r/technology/comments/1smfq4p/ticketmaster_is_an_illegal_monopoly_jury_rules/",
+          "score": 29285,
+          "comments": 652
+        },
+        {
+          "title": "マーク・ラファロ、上院公聴会でパラマウント・ワーナー・ブラザーズ合併を非難：「億万長者の空虚な約束を信じるな」",
+          "url": "https://reddit.com/r/technology/comments/1smhzbe/mark_ruffalo_blasts_paramountwarner_bros_merger/",
+          "score": 3245,
+          "comments": 88
+        },
+        {
+          "title": "オールバーズ、靴からAIへの驚くべき転換を発表、株価は300%以上爆騰",
+          "url": "https://reddit.com/r/technology/comments/1sm6uvt/allbirds_announces_stunning_pivot_from_shoes_to/",
+          "score": 12079,
+          "comments": 1849
+        },
+        {
+          "title": "Googleは私との約束を破った。今やICEが私のデータを持っている。",
+          "url": "https://reddit.com/r/technology/comments/1sma9qo/google_broke_its_promise_to_me_now_ice_has_my_data/",
+          "score": 6137,
+          "comments": 273
+        },
+        {
+          "title": "イラン、中東の米軍施設を標的とするため軌道上の中国衛星を購入したと報じられる — 購入契約には中国を拠点とする継続的な地上管制サービスが含まれていた",
+          "url": "https://reddit.com/r/technology/comments/1sm4fqj/iran_reportedly_bought_an_inorbit_chinese/",
+          "score": 3656,
+          "comments": 210
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/worldnews",
+      "category": "世界ニュース",
+      "region": "グローバル",
+      "items": [
+        {
+          "title": "イラン、反体制デモで初の女性を処刑へ",
+          "url": "https://reddit.com/r/worldnews/comments/1smh0ju/iran_to_execute_first_woman_over_antiregime/",
+          "score": 3026,
+          "comments": 578
+        },
+        {
+          "title": "新世界スクリューワーム、米国から約90マイルの地点で検出される",
+          "url": "https://reddit.com/r/worldnews/comments/1sm7bdx/new_world_screwworm_detected_about_90_miles_from/",
+          "score": 7767,
+          "comments": 594
+        },
+        {
+          "title": "「習は私に大きな、太ったハグをくれるだろう」：トランプ、ホルムズ海峡を中国と世界のために開いたと語る",
+          "url": "https://reddit.com/r/worldnews/comments/1sm5bc3/xi_will_give_me_big_fat_hug_trump_says_he_opened/",
+          "score": 11088,
+          "comments": 1490
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/japan",
+      "category": "日本",
+      "region": "日本",
+      "items": [
+        {
+          "title": "日本の大学、外国人博士号取得者の採用と育成を強化する計画を発表",
+          "url": "https://reddit.com/r/japan/comments/1smau1n/japan_universities_announce_plan_to_boost_foreign/",
+          "score": 58,
+          "comments": 9
+        },
+        {
+          "title": "無免許運転、信号無視、衝突事故を起こして逃走したトルコ人男性、名古屋で逮捕",
+          "url": "https://reddit.com/r/japan/comments/1smbkgg/turkish_man_arrested_in_nagoya_after_unlicensed/",
+          "score": 49,
+          "comments": 6
+        },
+        {
+          "title": "奈良の寺院の国宝に付着した染みを警察が捜査",
+          "url": "https://reddit.com/r/japan/comments/1sm2ydf/police_investigate_stains_found_on_national/",
+          "score": 130,
+          "comments": 15
+        },
+        {
+          "title": "京都府の死亡した少年の自宅を捜査員が捜索 | 朝日新聞：速報、日本ニュース、分析",
+          "url": "https://reddit.com/r/japan/comments/1sluppq/investigators_search_home_of_dead_boy_in_kyoto/",
+          "score": 266,
+          "comments": 42
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/korea",
+      "category": "韓国",
+      "region": "韓国",
+      "items": [
+        {
+          "title": "エネルギーショックの中、韓国のイスラエルに対する強硬姿勢",
+          "url": "https://reddit.com/r/korea/comments/1sm8m56/south_koreas_harder_line_on_israel_amid_energy/",
+          "score": 135,
+          "comments": 13
+        },
+        {
+          "title": "韓国の裁判所、ジョニー・ソマイルに懲役6ヶ月を言い渡し、法廷で拘束",
+          "url": "https://reddit.com/r/korea/comments/1slsc4x/korean_court_sentenced_johnny_somail_6_month_in/",
+          "score": 433,
+          "comments": 120
+        },
+        {
+          "title": "植民地時代のソウルで大日本帝国「国民服」を着用・販売するロシア系タタール人男性（1941年3月）",
+          "url": "https://reddit.com/r/korea/comments/1sm02uh/russian_tatar_man_wearing_and_selling_imperial/",
+          "score": 30,
+          "comments": 4
+        },
+        {
+          "title": "長い間離れていた後、韓国に戻った経験はどうでしたか？",
+          "url": "https://reddit.com/r/korea/comments/1smbmej/what_was_your_experience_going_back_to_korea/",
+          "score": 4,
+          "comments": 3
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/china",
+      "category": "中国",
+      "region": "中国",
+      "items": [
+        {
+          "title": "アメリカ人は中国に対する考えを変えている",
+          "url": "https://reddit.com/r/China/comments/1sm8chb/americans_are_changing_their_minds_about_china/",
+          "score": 109,
+          "comments": 194
+        },
+        {
+          "title": "米財務省のベッセント氏、中国は戦争中に石油を買い占め、信頼できないパートナーだったと語る",
+          "url": "https://reddit.com/r/China/comments/1smbqge/us_treasurys_bessent_says_china_has_been/",
+          "score": 39,
+          "comments": 32
+        },
+        {
+          "title": "制裁対象の中国タンカー「リッチ・スターリー」、ホルムズ海峡に引き返す、イラン港に寄港する船舶に対する米国の封鎖を突破できず",
+          "url": "https://reddit.com/r/China/comments/1sm1h1x/sanctioned_china_tanker_rich_starry_turns_back_to/",
+          "score": 69,
+          "comments": 51
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/europe",
+      "category": "ヨーロッパ",
+      "region": "欧州",
+      "items": [
+        {
+          "title": "ポーランド、オルバン失脚後、EUにウクライナへの900億ユーロ融資の迅速な放出を要請",
+          "url": "https://reddit.com/r/europe/comments/1sme1w6/poland_urges_eu_to_quickly_release_90bn_ukraine/",
+          "score": 2571,
+          "comments": 112
+        },
+        {
+          "title": "ハンガリーの次期首相、ユーロ導入への支持を示唆",
+          "url": "https://reddit.com/r/europe/comments/1smecvm/hungarys_pmelect_signals_support_for_euro_adoption/",
+          "score": 1068,
+          "comments": 86
+        },
+        {
+          "title": "この日：2019年4月15日、ノートルダム大聖堂が火災に見舞われた。",
+          "url": "https://reddit.com/r/europe/comments/1smhg86/on_this_day_april_15th_2019_notredame_cathedral/",
+          "score": 749,
+          "comments": 44
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/india",
+      "category": "インド",
+      "region": "インド",
+      "items": [
+        {
+          "title": "TCS「改宗」事件：「神に感謝、私は生き残った」：TCSナシクの女性従業員がさらなる恐怖を明かす",
+          "url": "https://reddit.com/r/india/comments/1smcvqj/tcs_conversion_case_thank_god_i_survived_tcs/",
+          "score": 222,
+          "comments": 15
+        },
+        {
+          "title": "パキスタンが70の拠点（発射台）を復活させ、PoKに約800人のテロリストが配置されている：報告 | マートゥルブーミ・イングリッシュ",
+          "url": "https://reddit.com/r/india/comments/1smeezq/nearly_800_terrorists_positioned_in_pok_as/",
+          "score": 171,
+          "comments": 30
+        },
+        {
+          "title": "コメディアンのアヌディープ・カティカラ、パワン・カリヤンに関するジョークでアンドラ警察によりUPから拘束される",
+          "url": "https://reddit.com/r/india/comments/1sm3mou/comedian_anudeep_katikala_detained_from_up_by/",
+          "score": 508,
+          "comments": 31
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/business",
+      "category": "ビジネス",
+      "region": "グローバル",
+      "items": [
+        {
+          "title": "カリフォルニアのカフェチェーン「フィルズ・コーヒー」、店舗からのプライドフラッグ撤去を命令。うまくいっていない",
+          "url": "https://reddit.com/r/business/comments/1smd3dz/california_cafe_chain_philz_coffee_orders_pride/",
+          "score": 265,
+          "comments": 61
+        },
+        {
+          "title": "苦戦する靴小売業者オールバーズ、靴からAIへの奇妙な転換、株価は400%以上爆騰",
+          "url": "https://reddit.com/r/business/comments/1sm9026/struggling_shoe_retailer_allbirds_makes_bizarre/",
+          "score": 341,
+          "comments": 34
+        },
+        {
+          "title": "ライブ・ネイションがチケット市場を不法に独占したと反トラスト裁判の陪審が認定 | ライブ・ネイションは独占行為を強く否定している。",
+          "url": "https://reddit.com/r/business/comments/1smii82/live_nation_illegally_monopolized_ticketing/",
+          "score": 32,
+          "comments": 4
+        },
+        {
+          "title": "セブン-イレブン、今年米国で645店舗を閉鎖する計画",
+          "url": "https://reddit.com/r/business/comments/1slnt9h/7eleven_plans_to_close_645_stores_in_the_us_this/",
+          "score": 1123,
+          "comments": 148
+        },
+        {
+          "title": "ディズニー、1,000人の従業員解雇が進行中；CEOジョシュ・ダマロは削減が業務を「合理化」すると語る：「これが困難なことだと分かっている」",
+          "url": "https://reddit.com/r/business/comments/1slwhid/disney_layoffs_of_1000_employees_are_underway_ceo/",
+          "score": 149,
+          "comments": 9
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/artificial",
+      "category": "AI",
+      "region": "グローバル",
+      "items": [
+        {
+          "title": "🚨 レッドアラート：テネシー州はチャットボットの構築をA級重罪（懲役15～25年）にしようとしている。これは訓練ではない。",
+          "url": "https://reddit.com/r/artificial/comments/1slu23a/red_alert_tennessee_is_about_to_make_building/",
+          "score": 717,
+          "comments": 459
+        },
+        {
+          "title": "AIはあなたの偏見をあなた自身に武器として向けている：MITとスタンフォード大学からの新しい研究",
+          "url": "https://reddit.com/r/artificial/comments/1smjd8t/ai_is_weaponizing_your_own_biases_against_you_new/",
+          "score": 9,
+          "comments": 5
+        },
+        {
+          "title": "史上初めて、ウクライナはロボットとドローンのみを使用してロシアの陣地と捕虜を捕獲した",
+          "url": "https://reddit.com/r/artificial/comments/1sm6y5q/for_the_first_time_in_history_ukraine_captured_a/",
+          "score": 30,
+          "comments": 3
+        },
+        {
+          "title": "もしアテンションが行列乗算を必要としなかったら？",
+          "url": "https://reddit.com/r/artificial/comments/1smd2fl/what_if_attention_didnt_need_matrix_multiplication/",
+          "score": 12,
+          "comments": 6
+        },
+        {
+          "title": "誰も見ていないときにAIエージェントが実際に何をしているかを追跡した。すべての決定を再生するツールを構築。",
+          "url": "https://reddit.com/r/artificial/comments/1sm261q/i_tracked_what_ai_agents_actually_do_when_nobodys/",
+          "score": 28,
+          "comments": 22
+        }
+      ]
+    },
+    {
+      "source": "Reddit r/startups",
+      "category": "スタートアップ",
+      "region": "グローバル",
+      "items": [
+        {
+          "title": "話すべき適切な人を見つけるにはどうすればいいですか？宣伝はしません",
+          "url": "https://reddit.com/r/startups/comments/1sm48hy/how_do_you_find_right_people_to_talk_i_will_not/",
+          "score": 23,
+          "comments": 30
+        },
+        {
+          "title": "テック系共同創業者探しが、誰かを搾取することに変わってしまったのはなぜか？[宣伝はしません]",
+          "url": "https://reddit.com/r/startups/comments/1smenbo/how_looking_for_tech_cofounder_turned_into/",
+          "score": 4,
+          "comments": 16
+        },
+        {
+          "title": "私のスタートアップのために真剣に顧客を獲得するにはどうすればいいですか？（宣伝はしません）",
+          "url": "https://reddit.com/r/startups/comments/1sm9rxh/how_do_i_seriously_acquire_customers_for_my/",
+          "score": 5,
+          "comments": 14
+        }
+      ]
+    }
+  ],
+  "github": {
+    "source": "GitHub Trending",
+    "region": "グローバル（開発者）",
+    "items": [
+      {
+        "title": "ultraworkers/claw-code - リポジトリがついにロック解除されました。パーティーを楽しんでください！史上最速のリポジトリで成功へ",
+        "url": "https://github.com/ultraworkers/claw-code",
+        "stars": 184759,
+        "language": "Rust"
+      },
+      {
+        "title": "VoltAgent/awesome-design-md - 人気ブランドのデザインシステムにインスパイアされたDESIGN.mdファイルのコレクション。",
+        "url": "https://github.com/VoltAgent/awesome-design-md",
+        "stars": 53646,
+        "language": null
+      },
+      {
+        "title": "MemPalace/mempalace - 最高のベンチマークを達成したオープンソースAIメモリシステム。しかも無料。",
+        "url": "https://github.com/MemPalace/mempalace",
+        "stars": 46548,
+        "language": "Python"
+      },
+      {
+        "title": "santifer/career-ops - Claude Code上に構築されたAI搭載の求職システム。14のスキルモード、Goダッシュボード、",
+        "url": "https://github.com/santifer/career-ops",
+        "stars": 34010,
+        "language": "JavaScript"
+      },
+      {
+        "title": "JuliusBrussee/caveman - 🪨 なぜ多くのトークンを使うのか、少ないトークンで十分なのに — トークンを65%削減するClaude Codeスキル",
+        "url": "https://github.com/JuliusBrussee/caveman",
+        "stars": 32503,
+        "language": "Python"
+      },
+      {
+        "title": "safishamsi/graphify - AIコーディングアシスタントスキル（Claude Code、Codex、OpenCode、Cursor、Gemini CLI、Git",
+        "url": "https://github.com/safishamsi/graphify",
+        "stars": 27344,
+        "language": "Python"
+      },
+      {
+        "title": "Gitlawb/openclaude - Open Claudeは、OpenAI、Gemini、DeepSeek、Ollama向けのオープンソースコーディングエージェントCLIです",
+        "url": "https://github.com/Gitlawb/openclaude",
+        "stars": 21780,
+        "language": "TypeScript"
+      },
+      {
+        "title": "claude-code-best/claude-code - 原汁原昧 Claude Code 可运行,可构建, 可调试版; Typescript タイプ全修復; 企業級信頼性; 安全無毒, lock ファイル保真, 可直接 b",
+        "url": "https://github.com/claude-code-best/claude-code",
+        "stars": 15930,
+        "language": "TypeScript"
+      },
+      {
+        "title": "openai/codex-plugin-cc - Claude CodeからCodexを使用してコードをレビューしたり、タスクを委任したりする。",
+        "url": "https://github.com/openai/codex-plugin-cc",
+        "stars": 14547,
+        "language": "JavaScript"
+      },
+      {
+        "title": "titanwings/colleague-skill - 将冰冷的离別化为温暖的 Skill，欢迎加入数字生命1.0！冷たい別れを温かいスキルに変える？それは",
+        "url": "https://github.com/titanwings/colleague-skill",
+        "stars": 14404,
+        "language": "Python"
+      }
+    ]
+  },
+  "ai_analysis": {
+    "source": "グローバルトレンド分析（AI）",
+    "region": "全世界",
+    "items": [],
+    "error": "Unterminated string starting at: line 102 column 9 (char 3270)"
+  },
+  "article_ideas": {
+    "affiliate_ideas": [
+      {
+        "title": "【2024年最新】AIツールのプライバシー問題とは？LLM利用規約の注意点と安全な選び方",
+        "keyword": "AIツール プライバシー, LLM 利用規約, AIツール 安全",
+        "why_now": "「Gas Townは、自己改善のためにユーザーのLLMクレジットから利用量を「盗んでいる」のか？」のトレンドから、AIツールのデータ利用に関するユーザーの懸念が高まっているため、情報提供のニーズが高い。AI Tools Labの専門分野と合致し、信頼性を築ける。",
+        "competition": "低",
+        "revenue_potential": "中",
+        "best_platform": "自社サイト",
+        "platform_reason": "専門性の高い情報を提供することで、サイトの権威性を高め、長期的なSEO効果とアフィリエイト収益に繋がる。関連するAIツールやVPNのアフィリエイトも展開可能。",
+        "priority": "S"
+      },
+      {
+        "title": "Googleのデータ問題から考えるVPNの必要性：あなたの個人情報は本当に守られている？",
+        "keyword": "Google データ問題, VPN 必要性, 個人情報 保護",
+        "why_now": "「Googleは私との約束を破った – 今やICEが私のデータを持っている」というHNのトップトレンドから、データプライバシーへの関心が非常に高まっている。VPNの重要性を訴求する絶好の機会。",
+        "competition": "中",
+        "revenue_potential": "高",
+        "best_platform": "自社サイト",
+        "platform_reason": "レンタルサーバー、VPN比較サイトとして、時事的な話題と絡めてVPNの必要性を強く訴求できる。検索流入が見込みやすく、VPNのアフィリエイト収益に直結する。",
+        "priority": "S"
+      },
+      {
+        "title": "OpenClawとは？使い方・機能・代替AIツールを徹底比較！",
+        "keyword": "OpenClaw, OpenClaw 使い方, AIツール 比較",
+        "why_now": "「OpenClawを使っているのは誰ですか？」というHNのトレンドから、新しいAIツールとして注目されている可能性がある。情報が少ないうちに記事を公開することで、検索上位を狙いやすい。",
+        "competition": "低",
+        "revenue_potential": "中",
+        "best_platform": "自社サイト",
+        "platform_reason": "AIツール比較サイトの強みを活かし、いち早く情報を提供することで、ニッチなキーワードでの検索上位獲得と、関連AIツールのアフィリエイトに繋げる。",
+        "priority": "A"
+      },
+      {
+        "title": "【OSSからクローズドソースへ】Cal.com事例から学ぶ、サービス移行のメリット・デメリットと代替ツール",
+        "keyword": "Cal.com クローズドソース, OSS 代替, スケジュール管理ツール",
+        "why_now": "「Cal.comはクローズドソースになる」というHNのトレンドから、OSSのビジネスモデルや代替サービスへの関心が高まっている。特定のツールに依存しないサービス選びの視点を提供できる。",
+        "competition": "低",
+        "revenue_potential": "低",
+        "best_platform": "note",
+        "platform_reason": "専門的な内容であり、特定のユーザー層に深く刺さる可能性があるため、有料コンテンツとしての販売や、自社サイトへの誘導記事としてnoteを活用する。",
+        "priority": "B"
+      },
+      {
+        "title": "サイバーセキュリティはなぜ「プルーフ・オブ・ワーク」のようだと言われるのか？個人でできる対策も解説",
+        "keyword": "サイバーセキュリティ プルーフオブワーク, サイバーセキュリティ 対策, VPN",
+        "why_now": "「サイバーセキュリティは今やプルーフ・オブ・ワークのようだ」というHNのトレンドから、サイバーセキュリティの概念への関心が高まっている。専門的な内容を分かりやすく解説し、VPNの必要性にも繋げられる。",
+        "competition": "低",
+        "revenue_potential": "中",
+        "best_platform": "自社サイト",
+        "platform_reason": "VPNの重要性を啓蒙する記事として、サイトの専門性を高める。難解なテーマを分かりやすく解説することで、読者の信頼を獲得し、他のVPN比較記事への誘導も期待できる。",
+        "priority": "A"
+      }
+    ],
+    "ec_opportunities": [
+      {
+        "product": "Digital Circus キャラクターグッズ（フィギュア、アパレル、ぬいぐるみ）",
+        "trending_in": "グローバル（YouTubeトレンド）",
+        "japan_status": "認知度低い/これから来る",
+        "buy_price_range": "500円〜5,000円",
+        "sell_price_range": "1,500円〜15,000円",
+        "source": "AliExpress, Amazon.com, Taobao",
+        "sell_on": "メルカリ, Amazon.co.jp, 楽天",
+        "risk": "知的財産権（公式ライセンスの有無）、品質、関税",
+        "priority": "S"
+      },
+      {
+        "product": "GODZILLA MINUS ZERO 海外限定コレクターズアイテム（フィギュア、ポスター、アパレル）",
+        "trending_in": "グローバル、アメリカ（YouTubeトレンド）",
+        "japan_status": "認知度低い/これから来る（海外限定品）",
+        "buy_price_range": "2,000円〜20,000円",
+        "sell_price_range": "5,000円〜50,000円",
+        "source": "Amazon.com, eBay, 海外の映画グッズ専門店",
+        "sell_on": "メルカリ, Amazon.co.jp, 楽天",
+        "risk": "関税、輸送中の破損、模倣品",
+        "priority": "A"
+      },
+      {
+        "product": "PINKY UP (K-POP/ダンス) 関連の限定アパレル・アクセサリー",
+        "trending_in": "アメリカ（YouTubeトレンド）",
+        "japan_status": "未上陸/認知度低い",
+        "buy_price_range": "1,000円〜8,000円",
+        "sell_price_range": "3,000円〜25,000円",
+        "source": "Amazon.com, 海外のK-POPグッズサイト",
+        "sell_on": "メルカリ, 楽天",
+        "risk": "流行の移り変わり、知的財産権、関税",
+        "priority": "B"
+      },
+      {
+        "product": "PiCore/Raspberry Pi向け超小型ケース・冷却ファン・専用ディスプレイ",
+        "trending_in": "HN（ニッチな技術系コミュニティ）",
+        "japan_status": "認知度低い（特定の層向け）",
+        "buy_price_range": "500円〜3,000円",
+        "sell_price_range": "1,500円〜8,000円",
+        "source": "AliExpress, Amazon.com, Seeed Studio",
+        "sell_on": "Amazon.co.jp, メルカリ, Yahoo!ショッピング",
+        "risk": "需要の限定性、技術的なサポート",
+        "priority": "B"
+      },
+      {
+        "product": "静電気対策モニター修理キット（特定のメーカー・モデル対応）",
+        "trending_in": "HN（DIY・修理コミュニティ）",
+        "japan_status": "認知度低い/ニッチな需要",
+        "buy_price_range": "1,000円〜5,000円",
+        "sell_price_range": "3,000円〜12,000円",
+        "source": "AliExpress, Amazon.com, 専門部品サイト",
+        "sell_on": "メルカリ, Amazon.co.jp",
+        "risk": "需要の限定性、専門知識の必要性、品質保証",
+        "priority": "C"
+      }
+    ],
+    "business_ideas": [
+      {
+        "idea": "AIツール利用データプライバシー監査SaaS",
+        "trend_basis": "「Googleは私との約束を破った」「Gas Townは…LLMクレジットから利用量を「盗んでいる」のか？」",
+        "target_market": "AIツールを導入している企業、個人開発者",
+        "revenue_model": "月額サブスクリプション（利用AIツール数、データ量に応じた従量課金）",
+        "priority": "S"
+      },
+      {
+        "idea": "OSS代替サービス発見・移行支援プラットフォーム",
+        "trend_basis": "「Cal.comはクローズドソースになる」",
+        "target_market": "OSSを利用している企業、開発者、個人ユーザー",
+        "revenue_model": "フリーミアム（基本機能無料、高度な比較・移行支援は有料）、アフィリエイト（代替サービス紹介）",
+        "priority": "A"
+      },
+      {
+        "idea": "LLM利用状況透明化・コスト最適化SaaS",
+        "trend_basis": "「Gas Townは、自己改善のためにユーザーのLLMクレジットから利用量を「盗んでいる」のか？」",
+        "target_market": "LLMを業務利用している企業、AI開発チーム",
+        "revenue_model": "月額サブスクリプション（LLM利用量、ユーザー数に応じた課金）",
+        "priority": "A"
+      },
+      {
+        "idea": "分散型イベントチケット販売プラットフォーム",
+        "trend_basis": "「ライブ・ネイションがチケット市場を不法に独占したと陪審が認定」",
+        "target_market": "イベント主催者、アーティスト、一般消費者",
+        "revenue_model": "取引手数料（ブロックチェーン技術を活用し、透明性と公正性を確保）",
+        "priority": "B"
+      },
+      {
+        "idea": "Raspberry Pi/軽量OS向けクラウド開発環境サービス",
+        "trend_basis": "「PiCore - Tiny Core LinuxのRaspberry Pi移植版」",
+        "target_market": "Raspberry Pi開発者、IoTエンジニア、教育機関",
+        "revenue_model": "月額サブスクリプション（利用時間、ストレージ容量に応じた従量課金）",
+        "priority": "B"
+      }
+    ]
+  }
+}

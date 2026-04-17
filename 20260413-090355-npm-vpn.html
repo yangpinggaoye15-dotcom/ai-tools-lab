@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPM サプライチェーン攻撃 対策 VPN｜開発者が今すぐ実践すべき完全防衛ガイド | AI Tools Lab</title>
+    <meta name="description" content="NPMサプライチェーン攻撃の仕組みと最新対策を徹底解説。VPNを活用したネットワーク防御から依存関係の監査手法まで、開発現場で即実践できるセキュリティ対策を具体的に紹介します。">
+    <meta property="og:title" content="NPM サプライチェーン攻撃 対策 VPN｜開発者が今すぐ実践すべき完全防衛ガイド">
+    <meta property="og:description" content="NPMサプライチェーン攻撃の仕組みと最新対策を徹底解説。VPNを活用したネットワーク防御から依存関係の監査手法まで、開発現場で即実践できるセキュリティ対策を具体的に紹介します。">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "NPM サプライチェーン攻撃 対策 VPN｜開発者が今すぐ実践すべき完全防衛ガイド",
+  "description": "NPMサプライチェーン攻撃の仕組みと最新対策を徹底解説。VPNを活用したネットワーク防御から依存関係の監査手法まで、開発現場で即実践できるセキュリティ対策を具体的に紹介します。",
+  "datePublished": "2026-04-13",
+  "dateModified": "2026-04-13",
+  "author": {
+    "@type": "Person",
+    "name": "AI Tools Lab 編集部",
+    "url": "https://ai-tools-lab.nexusai-lab.workers.dev/author.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AI Tools Lab",
+    "url": "https://ai-tools-lab.nexusai-lab.workers.dev"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ai-tools-lab.nexusai-lab.workers.dev/20260413-090355-npm-vpn.html"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://ai-tools-lab.nexusai-lab.workers.dev"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "記事一覧",
+      "item": "https://ai-tools-lab.nexusai-lab.workers.dev/index.html#articles"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NPM サプライチェーン攻撃 対策 VPN｜開発者が今すぐ実践すべき完全防衛ガイド",
+      "item": "https://ai-tools-lab.nexusai-lab.workers.dev/20260413-090355-npm-vpn.html"
+    }
+  ]
+}
+</script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Helvetica Neue', 'Noto Sans JP', sans-serif; color: #333; line-height: 1.9; background: #f8fafc; }
+        header { background: #fff; border-bottom: 2px solid #2563eb; padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+        .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5em; font-weight: 800; color: #2563eb; text-decoration: none; }
+        .logo span { color: #333; }
+        nav a { color: #555; text-decoration: none; margin-left: 24px; font-size: 0.95em; }
+        nav a:hover { color: #2563eb; }
+        .article-container { max-width: 780px; margin: 0 auto; padding: 40px 20px; }
+        .breadcrumb { font-size: 0.85em; color: #888; margin-bottom: 24px; }
+        .breadcrumb a { color: #2563eb; text-decoration: none; }
+        article { background: #fff; border-radius: 12px; padding: 40px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+        article h1 { font-size: 1.7em; line-height: 1.4; margin-bottom: 24px; color: #1e3a5f; }
+        article h2 { font-size: 1.35em; margin: 36px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; color: #1e3a5f; }
+        article h3 { font-size: 1.15em; margin: 28px 0 12px; color: #334155; }
+        article p { margin-bottom: 16px; color: #444; }
+        article ul, article ol { margin: 16px 0; padding-left: 28px; }
+        article li { margin-bottom: 8px; }
+        article a { color: #2563eb; }
+        article blockquote { border-left: 4px solid #2563eb; padding: 12px 20px; margin: 20px 0; background: #f0f4ff; border-radius: 0 8px 8px 0; }
+        article hr { border: none; border-top: 1px solid #e2e8f0; margin: 32px 0; }
+        article strong { color: #1e3a5f; }
+        .table-wrapper { overflow-x: auto; margin: 20px 0; }
+        article table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+        article th { background: #f0f4ff; padding: 10px 14px; text-align: left; border: 1px solid #e2e8f0; font-weight: 600; }
+        article td { padding: 10px 14px; border: 1px solid #e2e8f0; }
+        article pre { background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; overflow-x: auto; margin: 16px 0; }
+        .article-meta { font-size: 0.85em; color: #888; margin-bottom: 24px; }
+        .cta-box { background: linear-gradient(135deg, #2563eb, #7c3aed); color: white; padding: 28px; border-radius: 12px; margin: 36px 0; text-align: center; }
+        .cta-box h3 { margin-bottom: 8px; }
+        .cta-box a { color: white; background: rgba(255,255,255,0.2); padding: 10px 28px; border-radius: 8px; text-decoration: none; display: inline-block; margin-top: 12px; }
+        footer { background: #1e293b; color: #94a3b8; padding: 40px 20px; text-align: center; font-size: 0.85em; margin-top: 60px; }
+        @media (max-width: 768px) {
+            article { padding: 24px 16px; }
+            article h1 { font-size: 1.4em; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-inner">
+        <a href="index.html" class="logo">AI Tools <span>Lab</span></a>
+        <nav>
+            <a href="index.html#categories">カテゴリ</a>
+            <a href="index.html#articles">記事一覧</a>
+        </nav>
+    </div>
+</header>
+<div class="article-container">
+    <div class="breadcrumb"><a href="index.html">ホーム</a> &gt; AIツール &gt; NPM サプライチェーン攻撃 対策 VPN｜開発者が今すぐ実...</div>
+    <article>
+        <div class="article-meta">2026-04-13 | AIツール</div>
+        <blockquote><strong>広告についての開示</strong>: 当記事にはアフィリエイト広告が含まれています。当サイトは、商品やサービスへのリンクにアフィリエイトリンクを使用する場合があり、リンク経由で購入が行われた場合に紹介料を受け取ることがあります。ただし、これにより記事の内容や評価が影響されることはありません。</blockquote>
+
+
+<blockquote><strong>広告開示:</strong> 本記事にはアフィリエイトリンクおよびプロモーションコンテンツが含まれます。読者の方が商品・サービスを購入された場合、筆者に報酬が発生することがあります。記事内の評価・推薦は筆者の独自見解に基づいており、広告主からの指示は受けていません。</blockquote>
+
+<h1>NPM サプライチェーン攻撃 対策 VPN｜開発者が今すぐ実践すべき完全防衛ガイド</h1>
+
+<p>NPMのサプライチェーン攻撃は、現代のソフトウェア開発における最も深刻な脅威の一つです。VPNによるネットワーク防御と組み合わせた多層的な対策を講じなければ、あなたのプロジェクトが知らぬ間に攻撃の踏み台にされるリスクがあります。本記事では、NPMサプライチェーン攻撃の仕組みから実践的な対策まで、開発現場で即座に活用できる情報を網羅的に解説します。</p>
+
+<hr>
+
+<h2>目次</h2>
+<li><a href="#1" target="_blank" rel="noopener">NPMサプライチェーン攻撃とは何か</a></li>
+<li><a href="#2" target="_blank" rel="noopener">攻撃の手口と実際の被害事例</a></li>
+<li><a href="#3" target="_blank" rel="noopener">VPNを活用したネットワーク防御の考え方</a></li>
+<li><a href="#4" target="_blank" rel="noopener">NPMサプライチェーン攻撃への具体的な対策一覧</a></li>
+<li><a href="#5" target="_blank" rel="noopener">セキュリティツールの選び方</a></li>
+<li><a href="#6" target="_blank" rel="noopener">まとめ</a></li>
+
+<hr>
+
+<h2>NPMサプライチェーン攻撃とは何か</h2>
+
+<h3>ソフトウェアサプライチェーンの脆弱性</h3>
+
+<p>「サプライチェーン攻撃」とは、ソフトウェアの開発・配布・更新プロセスのどこかに悪意あるコードを埋め込み、最終的なエンドユーザーや企業システムに被害を与える攻撃手法です。NPM（Node Package Manager）は世界最大規模のパッケージレジストリであり、その規模ゆえに攻撃者にとって魅力的なターゲットとなっています。</p>
+
+<p>NPM公式サイトによると、npmレジストリには200万以上のパッケージが登録されています（npm公式サイトより。最新の数値は公式サイトをご確認ください）。これだけの規模になると、すべてのパッケージのセキュリティを個人や小規模チームが完全に把握することは現実的に困難です。</p>
+
+<h3>なぜNPMが狙われるのか</h3>
+
+<strong>筆者の見解:</strong> NPMが攻撃者に好まれる理由は、「信頼の連鎖」を悪用できる点にあります。開発者は`npm install`の一行で数十〜数百のパッケージを取得しますが、その依存関係の深部にある悪意あるコードには気づきにくいのが現状です。
+
+<p>主な狙われやすい要因を整理すると以下の通りです：</p>
+
+<ul><li><strong>依存関係の複雑性</strong>: 1つのパッケージが数十の依存パッケージを持つことが珍しくない</li>
+<li><strong>メンテナーの交代</strong>: 人気パッケージのメンテナーが変わることで、悪意あるコードが混入するリスクがある</li>
+<li><strong>タイポスクワッティング</strong>: `lodash`を`1odash`のようにタイプミスを狙った偽パッケージの公開</li>
+<li><strong>名前空間の混乱（Dependency Confusion）</strong>: プライベートパッケージと同名のパブリックパッケージを公開する攻撃</li>
+</ul>
+<hr>
+
+<h2>攻撃の手口と実際の被害事例</h2>
+
+<h3>代表的な攻撃パターン</h3>
+
+<p>NPMサプライチェーン攻撃には、いくつかの典型的なパターンがあります。</p>
+
+<h4>1. パッケージの乗っ取り（Account Takeover）</h4>
+
+<p>メンテナーのアカウントが侵害され、正規パッケージに悪意あるコードが追加されるケースです。多要素認証（MFA）が設定されていないアカウントは特に危険です。</p>
+
+<h4>2. Dependency Confusion攻撃</h4>
+
+<p>2021年にセキュリティ研究者のAlex Birsan氏が発表した手法で、企業内のプライベートパッケージと同名の高バージョンパッケージをパブリックレジストリに公開することで、ビルドシステムに悪意あるコードを取り込ませる攻撃です。この研究により、Apple・Microsoftを含む複数の大手企業における脆弱性の存在が実証・報告されました（バグバウンティプログラムとして報告済み）（出典: Alex Birsan, "Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies", Medium, 2021年）。</p>
+
+<h4>3. タイポスクワッティング</h4>
+
+<p>正規パッケージに似た名前の偽パッケージを公開し、タイプミスをした開発者がインストールするのを待ちます。</p>
+
+<h4>4. イベントストリーム事件（参考事例）</h4>
+
+<p>2018年に発生した`event-stream`パッケージへの悪意あるコード混入事件は、サプライチェーン攻撃の危険性を広く認識させるきっかけとなりました。このパッケージは週に数百万回ダウンロードされていたとされており、影響範囲の広さが問題となりました（出典: Snyk社のセキュリティブログ等で広く報告されています）。</p>
+
+<h3>攻撃が成功した場合の影響</h3>
+
+<div class="table-wrapper"><table>
+<thead><tr><th>影響の種類</th><th>具体的な被害</th></tr></thead><tbody>
+<tr><td>データ窃取</td><td>認証情報・APIキー・個人情報の流出</td></tr>
+<tr><td>バックドア設置</td><td>攻撃者による継続的なシステムアクセス</td></tr>
+<tr><td>暗号資産の窃取</td><td>ウォレット情報の窃取・不正送金</td></tr>
+<tr><td>ランサムウェア</td><td>システムの暗号化・身代金要求</td></tr>
+<tr><td>CI/CDパイプラインの汚染</td><td>ビルド成果物全体への悪意あるコード混入</td></tr>
+</tbody></table></div>
+
+<hr>
+
+<h2>VPNを活用したネットワーク防御の考え方</h2>
+
+<h3>NPM対策におけるVPNの役割</h3>
+
+<p>VPN（Virtual Private Network）は、NPMサプライチェーン攻撃対策において「ネットワーク層の防御」として機能します。ただし、VPN単体で攻撃を完全に防ぐことはできません。VPNはあくまで多層防御（Defense in Depth）の一要素として位置づけるべきです。</p>
+
+<strong>筆者の見解:</strong> VPNがNPMサプライチェーン攻撃対策に貢献できる主な場面は以下の通りです。
+
+<h4>VPNが有効なシナリオ</h4>
+
+<li><strong>プライベートレジストリへの安全なアクセス</strong></li>
+   - 社内のプライベートNPMレジストリ（Verdaccio、Nexus、Artifactoryなど）へのアクセスをVPN経由に限定することで、不正アクセスを防止できます。
+
+<li><strong>開発者の通信の保護</strong></li>
+   - 公共Wi-Fiなど安全でないネットワーク上での開発作業において、通信の盗聴・改ざんを防止します。
+
+<li><strong>ゼロトラストネットワークとの組み合わせ</strong></li>
+   - VPNとゼロトラストアーキテクチャを組み合わせることで、「誰も信頼しない」原則に基づいたアクセス制御が実現できます。
+
+<h4>VPNだけでは防げないこと</h4>
+
+<ul><li>パッケージ自体に混入した悪意あるコードの検出</li>
+<li>正規パッケージの乗っ取りによる攻撃</li>
+<li>タイポスクワッティングによる偽パッケージのインストール</li>
+</ul>
+<h3>企業向けVPNソリューションの比較</h3>
+
+<p>以下は代表的な企業向けVPNソリューションの概要です。各サービスの詳細・料金は変更される可能性があるため、必ず公式サイトでご確認ください。</p>
+
+<div class="table-wrapper"><table>
+<thead><tr><th>ソリューション</th><th>特徴</th><th>向いている組織規模</th></tr></thead><tbody>
+<tr><td>Cisco AnyConnect</td><td>エンタープライズ向け、高い信頼性</td><td>大規模企業</td></tr>
+<tr><td>WireGuard（OSS）</td><td>軽量・高速、オープンソース</td><td>中小〜中規模</td></tr>
+<tr><td>Tailscale</td><td>ゼロコンフィグ、P2Pベース</td><td>スタートアップ〜中規模</td></tr>
+<tr><td>Cloudflare Zero Trust</td><td>ゼロトラスト統合、無料プランあり</td><td>全規模</td></tr>
+</tbody></table></div>
+
+
+<p>（※ 料金は記事執筆時点のものです。最新の料金は公式サイトをご確認ください）</p>
+<blockquote><strong>注意:</strong> 上記の情報は筆者の調査時点（2024年時点の情報。最新情報は各公式サイトをご確認ください）に基づいています。料金・機能は変更される可能性があります。</blockquote>
+
+<hr>
+
+<h2>NPMサプライチェーン攻撃への具体的な対策一覧</h2>
+
+<h3>対策1: 依存関係の監査と可視化</h3>
+
+<h4>`npm audit`の活用</h4>
+
+<p>NPM公式が提供する`npm audit`コマンドは、インストール済みパッケージの既知の脆弱性を検出します。</p>
+
+<p><pre><code># 脆弱性の確認
+npm audit
+
+# 自動修正（互換性のある範囲で）
+npm audit fix
+
+# 詳細レポートの出力
+npm audit --json > audit-report.json
+</code></pre></p>
+
+<h4>lockファイルの厳格な管理</h4>
+
+<p>`package-lock.json`または`yarn.lock`を必ずバージョン管理に含め、意図しない依存関係の変更を検知できるようにします。</p>
+
+<p><pre><code># lockファイルを尊重したインストール
+npm ci  # package-lock.jsonを厳密に使用
+</code></pre></p>
+
+<h3>対策2: サードパーティ製セキュリティツールの導入</h3>
+
+<h4>Snyk</h4>
+
+<p>Snykは依存関係の脆弱性スキャン・修正提案・CI/CD統合を提供するセキュリティプラットフォームです（Snyk公式サイトより。無料プランあり。詳細は<a href="https://snyk.io" target="_blank" rel="noopener">Snyk公式サイト</a>をご確認ください）。</p>
+
+<h4>Socket Security</h4>
+
+<p>Socket Securityは、パッケージの「振る舞い」を分析し、既知の脆弱性だけでなく悪意あるコードのパターンを検出することに特化したツールです（Socket公式サイトより）。</p>
+
+<strong>筆者の見解:</strong> 従来の脆弱性データベースベースのスキャンだけでなく、Socketのような振る舞い分析ツールを組み合わせることで、ゼロデイ的な攻撃にも対応しやすくなります。
+
+<h3>対策3: プライベートレジストリの構築</h3>
+
+<p>社内専用のプライベートNPMレジストリを構築し、承認済みパッケージのみを利用可能にする方法は、大規模組織で特に有効です。</p>
+
+<strong>代表的なプライベートレジストリソリューション:</strong>
+
+<ul><li><strong>Verdaccio</strong>: オープンソースのプライベートNPMプロキシ（<a href="https://verdaccio.org" target="_blank" rel="noopener">Verdaccio公式サイト</a>）</li>
+<li><strong>JFrog Artifactory</strong>: エンタープライズ向けの包括的なパッケージ管理（JFrog公式サイトより）</li>
+<li><strong>GitHub Packages / npm Organizations</strong>: GitHubのエコシステムと統合されたパッケージ管理</li>
+</ul>
+<h3>対策4: CI/CDパイプラインへのセキュリティ統合</h3>
+
+<p><pre><code># GitHub Actionsでのnpm auditの例（概念的なコード例）
+name: Security Audit
+on: [push, pull_request]
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run npm audit
+        run: npm audit --audit-level=moderate
+</code></pre></p>
+
+<strong>実施すべきCI/CD上のセキュリティチェック:</strong>
+
+<ul><li>[ ] `npm audit`の自動実行（高・中程度の脆弱性でビルド失敗）</li>
+<li>[ ] Snykや類似ツールによるスキャンの統合</li>
+<li>[ ] lockファイルの整合性チェック</li>
+<li>[ ] 新規追加パッケージのレビュープロセス</li>
+<li>[ ] SBOM（ソフトウェア部品表）の自動生成</li>
+</ul>
+<h3>対策5: 開発者教育とポリシーの整備</h3>
+
+<p>技術的対策と同様に重要なのが、開発者へのセキュリティ教育です。</p>
+
+<strong>組織として整備すべきポリシー:</strong>
+
+<li><strong>パッケージ追加の承認フロー</strong>: 新しいNPMパッケージを追加する際のレビュープロセスを明文化する</li>
+<li><strong>最小権限の原則</strong>: CI/CDシステムやnpmアカウントに付与する権限を必要最小限にとどめる</li>
+<li><strong>MFAの必須化</strong>: npmアカウントへの多要素認証を組織全体で義務化する（npm公式もメンテナーへのMFA必須化を進めています）</li>
+<li><strong>インシデント対応計画</strong>: サプライチェーン攻撃が疑われた場合の対応手順を事前に策定する</li>
+
+<hr>
+
+<h2 id="5">セキュリティツールの選び方</h2>
+
+<p>NPMサプライチェーン攻撃対策のツールは多数ありますが、組織の規模・予算・技術レベルに応じて選ぶことが重要です。</p>
+
+<h3>規模別おすすめツール構成</h3>
+
+<div class="table-wrapper"><table>
+<thead><tr><th>組織規模</th><th>優先対策</th><th>推奨ツール</th></tr></thead><tbody>
+<tr><td>個人開発者</td><td>`npm audit` + lockファイル管理</td><td>npm audit（無料・組み込み済み）</td></tr>
+<tr><td>小規模チーム</td><td>CI統合 + 脆弱性スキャン</td><td>Snyk（無料プランあり） + GitHub Actions</td></tr>
+<tr><td>中規模企業</td><td>プライベートレジストリ + ゼロトラスト</td><td>Verdaccio + WireGuard/Tailscale</td></tr>
+<tr><td>大規模企業</td><td>エンタープライズ統合 + SOC連携</td><td>JFrog Artifactory + Cisco AnyConnect</td></tr>
+</tbody></table></div>
+
+
+<p>（※ 料金は記事執筆時点のものです。最新の料金は公式サイトをご確認ください）</p>
+<blockquote><strong>筆者の見解:</strong> まず費用0円でできる「`npm audit`の定期実行」と「MFAの有効化」から始めることを強くおすすめします。完璧な対策は理想ですが、まず低コストでできることを確実に実施することが現実的な第一歩です。</blockquote>
+
+<hr>
+
+<h2 id="6">まとめ</h2>
+
+<p>NPMサプライチェーン攻撃は、単一の対策では防ぎきれない多層的な脅威です。本記事で解説した対策を優先度順に整理すると：</p>
+
+<li><strong>即実施</strong>（無料・すぐできる）: `npm audit`の定期実行、MFAの有効化、lockファイルのGit管理</li>
+<li><strong>短期対応</strong>（低コスト）: SnykなどのCI統合、パッケージ追加の承認フロー策定</li>
+<li><strong>中長期対応</strong>（投資が必要）: プライベートレジストリ構築、VPN/ゼロトラスト導入、SBOM生成</li>
+
+<p>VPNはNPMサプライチェーン攻撃対策の「万能薬」ではありませんが、プライベートレジストリへのアクセス保護・開発者通信の保護という観点で重要な役割を果たします。技術的対策と組織的ポリシーを組み合わせた多層防御が、現実的かつ効果的なアプローチです。</p>
+
+<hr>
+
+<h2>参考文献</h2>
+
+<li>npm公式サイト "npm Registry" <a href="https://www.npmjs.com/" target="_blank" rel="noopener">https://www.npmjs.com/</a> （2026年4月確認）</li>
+<li>Alex Birsan, "Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies", Medium, 2021年 <a href="https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610" target="_blank" rel="noopener">https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610</a></li>
+<li>Snyk公式サイト "Snyk Open Source Security" <a href="https://snyk.io/" target="_blank" rel="noopener">https://snyk.io/</a> （2026年4月確認）</li>
+<li>Socket Security公式サイト <a href="https://socket.dev/" target="_blank" rel="noopener">https://socket.dev/</a> （2026年4月確認）</li>
+<li>Verdaccio公式サイト <a href="https://verdaccio.org/" target="_blank" rel="noopener">https://verdaccio.org/</a> （2026年4月確認）</li>
+<li>npm公式ドキュメント "npm audit" <a href="https://docs.npmjs.com/cli/v10/commands/npm-audit" target="_blank" rel="noopener">https://docs.npmjs.com/cli/v10/commands/npm-audit</a> （2026年4月確認）</li>
+<li>GitHub "Keeping your supply chain secure with Dependabot" <a href="https://docs.github.com/en/code-security/dependabot" target="_blank" rel="noopener">https://docs.github.com/en/code-security/dependabot</a> （2026年4月確認）</li>
+        <div class="cta-box">
+            <h3>他のAIツールも比較してみませんか？</h3>
+            <p>AI Tools Labでは30以上のAIツールを実際に使って徹底レビューしています</p>
+            <a href="index.html#articles">記事一覧を見る</a>
+        </div>
+    </article>
+</div>
+<footer>
+    <p>&copy; 2026 AI Tools Lab. All rights reserved.</p>
+</footer>
+</body>
+</html>
